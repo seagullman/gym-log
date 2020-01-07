@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		442E256023C3D43900525DE9 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E255F23C3D43900525DE9 /* Exercise.swift */; };
+		442E256423C45F3500525DE9 /* exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = 442E256323C45F3500525DE9 /* exercises.json */; };
+		442E256723C4D0B800525DE9 /* GymLogNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E256623C4D0B800525DE9 /* GymLogNetworkClient.swift */; };
+		442E256A23C4D1DA00525DE9 /* AsyncResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442E256923C4D1DA00525DE9 /* AsyncResult.swift */; };
 		44C3254C23C3A7A70086B96C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C3254B23C3A7A70086B96C /* AppDelegate.swift */; };
 		44C3254E23C3A7A70086B96C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C3254D23C3A7A70086B96C /* SceneDelegate.swift */; };
 		44C3255023C3A7A70086B96C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C3254F23C3A7A70086B96C /* ViewController.swift */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		442E255F23C3D43900525DE9 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		442E256323C45F3500525DE9 /* exercises.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exercises.json; sourceTree = "<group>"; };
+		442E256623C4D0B800525DE9 /* GymLogNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymLogNetworkClient.swift; sourceTree = "<group>"; };
+		442E256923C4D1DA00525DE9 /* AsyncResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncResult.swift; sourceTree = "<group>"; };
 		44C3254823C3A7A70086B96C /* gym-log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gym-log.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44C3254B23C3A7A70086B96C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44C3254D23C3A7A70086B96C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		442E255D23C3D3F900525DE9 /* DomainTier */ = {
+			isa = PBXGroup;
+			children = (
+				442E256523C4D09B00525DE9 /* Clients */,
+				442E256223C45F0A00525DE9 /* SampleJSON */,
+				442E255E23C3D40600525DE9 /* Models */,
+			);
+			path = DomainTier;
+			sourceTree = "<group>";
+		};
+		442E255E23C3D40600525DE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				442E255F23C3D43900525DE9 /* Exercise.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		442E256223C45F0A00525DE9 /* SampleJSON */ = {
+			isa = PBXGroup;
+			children = (
+				442E256323C45F3500525DE9 /* exercises.json */,
+			);
+			path = SampleJSON;
+			sourceTree = "<group>";
+		};
+		442E256523C4D09B00525DE9 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				442E256623C4D0B800525DE9 /* GymLogNetworkClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		442E256823C4D1C500525DE9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				442E256923C4D1DA00525DE9 /* AsyncResult.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		44C3253F23C3A7A70086B96C = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +149,8 @@
 		44C3254A23C3A7A70086B96C /* gym-log */ = {
 			isa = PBXGroup;
 			children = (
+				442E256823C4D1C500525DE9 /* Common */,
+				442E255D23C3D3F900525DE9 /* DomainTier */,
 				44C3254B23C3A7A70086B96C /* AppDelegate.swift */,
 				44C3254D23C3A7A70086B96C /* SceneDelegate.swift */,
 				44C3254F23C3A7A70086B96C /* ViewController.swift */,
@@ -233,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C3255823C3A7A80086B96C /* LaunchScreen.storyboard in Resources */,
+				442E256423C45F3500525DE9 /* exercises.json in Resources */,
 				44C3255523C3A7A80086B96C /* Assets.xcassets in Resources */,
 				44C3255323C3A7A70086B96C /* Main.storyboard in Resources */,
 			);
@@ -260,6 +313,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C3255023C3A7A70086B96C /* ViewController.swift in Sources */,
+				442E256A23C4D1DA00525DE9 /* AsyncResult.swift in Sources */,
+				442E256023C3D43900525DE9 /* Exercise.swift in Sources */,
+				442E256723C4D0B800525DE9 /* GymLogNetworkClient.swift in Sources */,
 				44C3254C23C3A7A70086B96C /* AppDelegate.swift in Sources */,
 				44C3254E23C3A7A70086B96C /* SceneDelegate.swift in Sources */,
 			);
