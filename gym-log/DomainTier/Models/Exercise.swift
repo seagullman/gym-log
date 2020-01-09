@@ -24,12 +24,8 @@ public struct ExerciseDM: Codable {
     public var exerciseDescriptions: [String]?
 }
 
-let singleExercise = ExerciseDM(
-    type: ExerciseType.warmUp,
-    name: "20 min elliptical"
-);
-
-public struct WorkoutDM: Codable {
+public struct WorkoutResponse: Codable {
+    public var title: String
     public var exercises: [ExerciseDM]
 }
 

@@ -1,35 +1,44 @@
 
-[
-    {
-        "type": "WarmUp",
-        "name": "5 min elliptical"
-    },
-    {
-        "type": "Single",
-        "name": "Standing barbell military press",
-        "numberOfSets": 5,
-        "numberOfReps": 5
-    },
-    {
-        "type": "SuperSet",
-        "numberOfSets": 4,
-        "numberOfReps": 10,
-        "exerciseDescriptions": ["Sitting dumbell military press", "Dumbell lateral raises"]
-    },
-    {
-        "type": "SuperSet",
-        "numberOfSets": 4,
-        "numberOfReps": 8,
-        "exerciseDescriptions": ["Upright row", "Dumbell lateral raises"]
-    },
-    {
-        "type": "SuperSet",
-        "numberOfSets": 4,
-        "numberOfReps": 12,
-        "exerciseDescriptions": ["Arnold press", "Dumbell rear delt flyes"]
-    },
-    {
-        "type": "PostLift",
-        "name": "20 minute swim"
-    }
-]
+{
+    "title": "Monday 1/8/2020 - Shoulders",
+    "exercises": [
+        {
+            "type": "WarmUp",
+            "name": "7 min elliptical"
+        },
+        {
+            "type": "Single",
+            "name": "Standing barbell military press",
+            "numberOfSets": 5,
+            "numberOfReps": 5
+        },
+        {
+            "type": "Single",
+            "name": "Squat jumps",
+            "numberOfSets": 3,
+            "numberOfReps": 10
+        },
+        {
+            "type": "SuperSet",
+            "numberOfSets": 4,
+            "numberOfReps": 10,
+            "exerciseDescriptions": ["Sitting dumbell military press", "Dumbell lateral raises"]
+        },
+        {
+            "type": "SuperSet",
+            "numberOfSets": 4,
+            "numberOfReps": 8,
+            "exerciseDescriptions": ["Upright row", "Dumbell lateral raises"]
+        },
+        {
+            "type": "SuperSet",
+            "numberOfSets": 4,
+            "numberOfReps": 12,
+            "exerciseDescriptions": ["Arnold press", "Dumbell rear delt flyes"]
+        },
+        {
+            "type": "PostLift",
+            "name": "20 minute swim"
+        }
+    ]
+}

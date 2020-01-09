@@ -1,0 +1,6 @@
+framework module Pods_gym_log_gym_logUITests {
+  umbrella header "Pods-gym-log-gym-logUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
