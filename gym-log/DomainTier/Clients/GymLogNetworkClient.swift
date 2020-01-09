@@ -7,30 +7,38 @@
 //
 
 import Foundation
-
+import SPRingboard
 
 internal protocol GymLogClient {
-    func fetchTodaysWorkout(completion: (AsyncResult<WorkoutDM>) -> Void)
+    func fetchWorkout() -> FutureResult<WorkoutResponse>
 }
+
+fileprivate let sharedNetworkClient = NetworkGymLogClient()
 
 internal class NetworkGymLogClient: GymLogClient {
     
-    func fetchTodaysWorkout(completion: (AsyncResult<WorkoutDM>) -> Void) {
+    public static let shared: NetworkGymLogClient = sharedNetworkClient
+    
+    func fetchWorkout() -> FutureResult<WorkoutResponse> {
         NSLog("***** fetching current workout")
-        guard let sampleJson = readJSONFromFile(fileName: "exercises") else { return }
+        let deferred = DeferredResult<WorkoutResponse>()
         
+        guard let sampleJson = readJSONFromFile(fileName: "exercises") else {
+            NSLog("***** FATAL ERROR: Unable to read workout JSON from file")
+            fatalError()
+        }
         
         do {
             let jsonData = try JSONSerialization.data(withJSONObject: sampleJson)
-            let exerciseDMs = try! JSONDecoder().decode(Array<ExerciseDM>.self, from: jsonData)
-            let workout = WorkoutDM(exercises: exerciseDMs)
-            completion(.success(workout))
+            let response = try! JSONDecoder().decode(WorkoutResponse.self, from: jsonData)
+            deferred.success(value: response)
         } catch let error {
             NSLog("Error serializing sample json: \(error)")
+            deferred.failure(error: error)
         }
-        
+        return deferred
     }
-
+    
     func readJSONFromFile(fileName: String) -> Any? {
         var json: Any?
         if let path = Bundle.main.path(forResource: fileName, ofType: "json") {
@@ -45,5 +53,6 @@ internal class NetworkGymLogClient: GymLogClient {
         }
         return json
     }
-    
 }
+    
+
