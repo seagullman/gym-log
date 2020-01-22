@@ -7,15 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04955C5E6B6A7B251F9EE9DA7F1CBBDE /* Pods-gym-log-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC987E4C737008982BF2723AD328A9 /* Pods-gym-log-dummy.m */; };
-		2A10570B729416AE87E997F1CB623988 /* Pods-gym-log-gym-logUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3810D9A56F9D34CF3D03383933F5E350 /* Pods-gym-log-gym-logUITests-dummy.m */; };
-		99E2710E60363DC4873EDE5C4CEDC010 /* Pods-gym-log-gym-logUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 464CE28A11CBACB0077127291185E3D5 /* Pods-gym-log-gym-logUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BC7917F216A947616B4EF096E78D88D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		AE9EE6E3EAA5CEC9DF61F85664ED544D /* Pods-gym-logTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00229059625FB28986F10DA9401D1FDD /* Pods-gym-logTests-dummy.m */; };
-		B6BF2433AE00F5BB08DB3F8AD111E90A /* Pods-gym-logTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C88CD08AE37924A7AC60AB1CCFAC4B20 /* Pods-gym-logTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CFCF9C720F380FEE3D032B8BF62482E4 /* Pods-gym-log-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD7B643933EC5EAD0D19725FBFD72A7 /* Pods-gym-log-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD0F041F368028FF9AB8D8E3AD7F8722 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		DF4B7689559B8F1D531484016770B93B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0348E72A279882575367B52CE6A0C2B1 /* M13CheckboxFlatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6C15FC833B4D6BF17B64AABE8AE14 /* M13CheckboxFlatController.swift */; };
+		0CB32C5503CB88835E8FE99FBC350ED4 /* Pods-gym-log-gym-logUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5C41F26890827325C649833C7A862 /* Pods-gym-log-gym-logUITests-dummy.m */; };
+		2229A6998218AC6DFF497473500021C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD608BCCF279B1277BB911F33106997F /* Foundation.framework */; };
+		254315B3201BB02B083E2B189DD456E3 /* M13Checkbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC68B3A86E6425551F8AFB78F1A998ED /* M13Checkbox-dummy.m */; };
+		3E3EB29E1A912DA51B5A537C152AA490 /* M13CheckboxGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ADEBBF9F6508F304908F924047B31B /* M13CheckboxGestureRecognizer.swift */; };
+		54295CEF5B5271B336B17776A282D3C6 /* M13CheckboxStrokeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD7B1DC2B91101DEC2FD9E8781A5530 /* M13CheckboxStrokeController.swift */; };
+		56BC1A6298E10CCE7703ADBC5AD48FAC /* M13CheckboxExpandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFF75A31482EB977ED79742A727D629 /* M13CheckboxExpandController.swift */; };
+		58CAF7CDFFE29183F83F05E53A24DEBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD608BCCF279B1277BB911F33106997F /* Foundation.framework */; };
+		690A3616858F1EF14011B02B88924458 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BDA658338AD3813D969D7011B56B8D /* UIKit.framework */; };
+		7AF77E6823887DFE89A3E24E9E57A34E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276842F3A283EE87124FE6C3EAAFD184 /* CoreGraphics.framework */; };
+		89DE0C94B223F24F8A4934F5012E6DBC /* Pods-gym-log-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E616609063E680EC0CE19C2DD5027E /* Pods-gym-log-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91DE47E4BCDE92CC97123C314723B3A8 /* M13CheckboxDisclosurePathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5840952A04CFAA95BA336043AC1A5F65 /* M13CheckboxDisclosurePathGenerator.swift */; };
+		97488E77760F54B100BDF6D4E17D377F /* Pods-gym-log-gym-logUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 512A663AA4CBF9CBD9A3E9896478793F /* Pods-gym-log-gym-logUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97A18E7CA66BA87E83A038BF75B2DCB2 /* M13CheckboxAnimationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB241540E44D8637BCEBFB5FE5A206 /* M13CheckboxAnimationGenerator.swift */; };
+		99FBBAF5AEB8A1895DAB1752E3AB115C /* M13CheckboxRadioPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880D7D28765AC9C8E3A3C4717496A23D /* M13CheckboxRadioPathGenerator.swift */; };
+		A14D173D1A208AE9ADB6419B6BFBF426 /* M13Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE329607D72E8ACD6EC21D9D45F9B04 /* M13Checkbox.swift */; };
+		A7448C3B3357059EE87853CFF2BE09C4 /* M13CheckboxAddRemovePathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E59F6FCC139E86AEDDD7D75615F9B7F /* M13CheckboxAddRemovePathGenerator.swift */; };
+		ABD255A9E2627DB24C95535AD6A69B19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD608BCCF279B1277BB911F33106997F /* Foundation.framework */; };
+		AE32CE1F494D51291E92F6B0C29D7034 /* M13CheckboxSpiralController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96B3DBBBE7519C96D35DFD0B7459792 /* M13CheckboxSpiralController.swift */; };
+		AE9EE6E3EAA5CEC9DF61F85664ED544D /* Pods-gym-logTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBA8FC81A44C5774565A25DC277F3EE /* Pods-gym-logTests-dummy.m */; };
+		B0471D9061D1AE1F54C08242A5773ECF /* M13CheckboxFillController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC0E6830D3153501694B068A9F3DFB9 /* M13CheckboxFillController.swift */; };
+		B323D65D6BE2950D9615F791E7A90A7F /* M13CheckboxDotController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF933D2FC06E6B883A45C0CA17E9744 /* M13CheckboxDotController.swift */; };
+		B642D0A666A7B76CE25C412820331536 /* M13Checkbox+IB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C72EDC8A036D53426A667ACB604A1 /* M13Checkbox+IB.swift */; };
+		B6BF2433AE00F5BB08DB3F8AD111E90A /* Pods-gym-logTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B31614AF905AFD7C6B50869A780683 /* Pods-gym-logTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDA2C8A3498EA6E4DBF815571102DFD3 /* Pods-gym-log-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3685FE9436236740F762E5DAF7B75468 /* Pods-gym-log-dummy.m */; };
+		C2BA008A914F681607429815D2EDEA95 /* M13CheckboxPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B78B80CAB1AAF8B4F0667C0E88E74D4 /* M13CheckboxPathGenerator.swift */; };
+		CA89E0222ABBC43F957E4F3BF7F46142 /* M13Checkbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C8B82D0BDB8346230E4CF784460AF8 /* M13Checkbox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D035EDC528DBF5BA980CDF5299828034 /* M13CheckboxBounceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB44EADFD8CD7B21C070D947A015621 /* M13CheckboxBounceController.swift */; };
+		D5584524FE609C7CD27E83BCB74CE685 /* M13CheckboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE523114A05177E0CC9B6E0F1AB178E /* M13CheckboxController.swift */; };
+		DF4B7689559B8F1D531484016770B93B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD608BCCF279B1277BB911F33106997F /* Foundation.framework */; };
+		E08B31BE69E7F9FD79F888D6878470CE /* DefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BB0A359A5567A9CC9FD9F9E9D6AF6 /* DefaultValues.swift */; };
+		E9D6E5290AA728E26BB83686BABD683A /* M13CheckboxCheckPathGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82B3A8E06131379730D362E99C4B472 /* M13CheckboxCheckPathGenerator.swift */; };
+		FF6BF71F784703DB5F302C257245A51B /* M13CheckboxFadeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE048C201E7502747682B03BE0E4ED1 /* M13CheckboxFadeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,46 +50,100 @@
 			remoteGlobalIDString = FEDA587163845AE517BBB1A23CBA4E98;
 			remoteInfo = "Pods-gym-log";
 		};
+		25AD13C9CFBB0F8FC94DEA437104B884 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7111E54EAE43E89F451A75076C3525ED;
+			remoteInfo = M13Checkbox;
+		};
+		9295981D9B880DB13C49A6C2D646CDBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7111E54EAE43E89F451A75076C3525ED;
+			remoteInfo = M13Checkbox;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00229059625FB28986F10DA9401D1FDD /* Pods-gym-logTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-gym-logTests-dummy.m"; sourceTree = "<group>"; };
-		03B5E74F7D25D93220C656C20A02498D /* Pods-gym-log-gym-logUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-gym-log-gym-logUITests.modulemap"; sourceTree = "<group>"; };
-		1F4B14F3F2F17594C0D61326584688E0 /* Pods-gym-logTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-gym-logTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1FB88E4E8C47F66602145AC64F17ACD3 /* Pods-gym-log-gym-logUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-gym-log-gym-logUITests-Info.plist"; sourceTree = "<group>"; };
-		276C6EFE3A77FECF15750D98A07266FC /* Pods-gym-log-gym-logUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-gym-log-gym-logUITests.release.xcconfig"; sourceTree = "<group>"; };
-		2ABC987E4C737008982BF2723AD328A9 /* Pods-gym-log-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-gym-log-dummy.m"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		36C9C107656CB0516B0BBFC2C861B26E /* Pods-gym-log-gym-logUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-gym-log-gym-logUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3810D9A56F9D34CF3D03383933F5E350 /* Pods-gym-log-gym-logUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-gym-log-gym-logUITests-dummy.m"; sourceTree = "<group>"; };
-		464CE28A11CBACB0077127291185E3D5 /* Pods-gym-log-gym-logUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-gym-log-gym-logUITests-umbrella.h"; sourceTree = "<group>"; };
-		53B9B3201A2ADE87D0031115FE6DDDAE /* Pods-gym-logTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-gym-logTests.modulemap"; sourceTree = "<group>"; };
+		01BDA658338AD3813D969D7011B56B8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		01D5C41F26890827325C649833C7A862 /* Pods-gym-log-gym-logUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-gym-log-gym-logUITests-dummy.m"; sourceTree = "<group>"; };
+		07A7C899C45FAF510C7ADAD0CAC8D189 /* Pods-gym-log-gym-logUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-gym-log-gym-logUITests-frameworks.sh"; sourceTree = "<group>"; };
+		07CAC4FDA28EE8CAAEF8F6450FAB8A0C /* Pods-gym-log-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-gym-log-acknowledgements.plist"; sourceTree = "<group>"; };
+		0CD6E01D76EB247FEAE7D5FAEBD5DE39 /* Pods-gym-log-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-gym-log-frameworks.sh"; sourceTree = "<group>"; };
+		11ADEBBF9F6508F304908F924047B31B /* M13CheckboxGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxGestureRecognizer.swift; path = Sources/M13CheckboxGestureRecognizer.swift; sourceTree = "<group>"; };
+		16B505EC5313A7FDD65907B62EA4AF48 /* Pods-gym-log.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-gym-log.release.xcconfig"; sourceTree = "<group>"; };
+		1DD7B1DC2B91101DEC2FD9E8781A5530 /* M13CheckboxStrokeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxStrokeController.swift; path = Sources/Managers/M13CheckboxStrokeController.swift; sourceTree = "<group>"; };
+		276842F3A283EE87124FE6C3EAAFD184 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		276ED6BA475229B34B6C1EFD734696FB /* Pods-gym-log-gym-logUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-gym-log-gym-logUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		28512E54BDA4B7716A0AD85DDCDBC552 /* Pods-gym-logTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-gym-logTests.release.xcconfig"; sourceTree = "<group>"; };
+		29E616609063E680EC0CE19C2DD5027E /* Pods-gym-log-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-gym-log-umbrella.h"; sourceTree = "<group>"; };
+		2B78B80CAB1AAF8B4F0667C0E88E74D4 /* M13CheckboxPathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxPathGenerator.swift; path = Sources/Paths/M13CheckboxPathGenerator.swift; sourceTree = "<group>"; };
+		2E59F6FCC139E86AEDDD7D75615F9B7F /* M13CheckboxAddRemovePathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxAddRemovePathGenerator.swift; path = Sources/Paths/M13CheckboxAddRemovePathGenerator.swift; sourceTree = "<group>"; };
+		2FFF75A31482EB977ED79742A727D629 /* M13CheckboxExpandController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxExpandController.swift; path = Sources/Managers/M13CheckboxExpandController.swift; sourceTree = "<group>"; };
+		3685FE9436236740F762E5DAF7B75468 /* Pods-gym-log-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-gym-log-dummy.m"; sourceTree = "<group>"; };
+		3CC976CE0F98D3CF3AA06C0E12F25A02 /* M13Checkbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = M13Checkbox.modulemap; sourceTree = "<group>"; };
+		3DBA8FC81A44C5774565A25DC277F3EE /* Pods-gym-logTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-gym-logTests-dummy.m"; sourceTree = "<group>"; };
+		3FC0E6830D3153501694B068A9F3DFB9 /* M13CheckboxFillController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFillController.swift; path = Sources/Managers/M13CheckboxFillController.swift; sourceTree = "<group>"; };
+		4AE329607D72E8ACD6EC21D9D45F9B04 /* M13Checkbox.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13Checkbox.swift; path = Sources/M13Checkbox.swift; sourceTree = "<group>"; };
+		4F76884C294A7C8750FA9D06A32E7FBD /* Pods-gym-log-gym-logUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-gym-log-gym-logUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4FEE3E873DDDD20F72CAE0B9740BC1AD /* Pods-gym-log-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-gym-log-Info.plist"; sourceTree = "<group>"; };
+		512A663AA4CBF9CBD9A3E9896478793F /* Pods-gym-log-gym-logUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-gym-log-gym-logUITests-umbrella.h"; sourceTree = "<group>"; };
+		52C8B82D0BDB8346230E4CF784460AF8 /* M13Checkbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13Checkbox-umbrella.h"; sourceTree = "<group>"; };
+		548B1C28C7D21BABB5971A3A20001CEC /* Pods-gym-log-gym-logUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-gym-log-gym-logUITests.modulemap"; sourceTree = "<group>"; };
+		5840952A04CFAA95BA336043AC1A5F65 /* M13CheckboxDisclosurePathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxDisclosurePathGenerator.swift; path = Sources/Paths/M13CheckboxDisclosurePathGenerator.swift; sourceTree = "<group>"; };
+		5CB44EADFD8CD7B21C070D947A015621 /* M13CheckboxBounceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxBounceController.swift; path = Sources/Managers/M13CheckboxBounceController.swift; sourceTree = "<group>"; };
+		5CE79C5BF20743404E59BEFD080A364D /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = M13Checkbox.framework; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3192B790A6D73EE7BA6F65E14AD163 /* Pods_gym_log.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_gym_log.framework; path = "Pods-gym-log.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		60B21E1F86ABB0284340AE9E0679D8FF /* Pods-gym-log.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-gym-log.modulemap"; sourceTree = "<group>"; };
+		5E2C72EDC8A036D53426A667ACB604A1 /* M13Checkbox+IB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "M13Checkbox+IB.swift"; path = "Sources/M13Checkbox+IB.swift"; sourceTree = "<group>"; };
+		64F3A45E4C86E970B436E0EC328EE07E /* Pods-gym-logTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-gym-logTests-Info.plist"; sourceTree = "<group>"; };
 		657EE7171DE20E7F09EC52C1296DBA67 /* Pods_gym_log_gym_logUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_gym_log_gym_logUITests.framework; path = "Pods-gym-log-gym-logUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FF568A40CD8E0A48C43E7E29D6C8EC2 /* Pods-gym-logTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-gym-logTests-Info.plist"; sourceTree = "<group>"; };
-		704B29D60EDAF5BDC9C47DCDF8FF22BE /* Pods-gym-log-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-gym-log-acknowledgements.plist"; sourceTree = "<group>"; };
-		704D7C6DC2745989C962488B51291B13 /* Pods-gym-logTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-gym-logTests.release.xcconfig"; sourceTree = "<group>"; };
+		6797937F1135D02B74D372E70C55D732 /* Pods-gym-log.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-gym-log.debug.xcconfig"; sourceTree = "<group>"; };
+		79B15E700FA404B4D4FD943366CDC980 /* Pods-gym-logTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-gym-logTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C4E39A95A534146DCAC1BFA715A47C0 /* Pods-gym-logTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-gym-logTests.modulemap"; sourceTree = "<group>"; };
+		7D3416182978D9DD7089E2B4B77EEA50 /* Pods-gym-log-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-gym-log-acknowledgements.markdown"; sourceTree = "<group>"; };
+		82C705324E25B46475267FF294BFDC02 /* Pods-gym-log-gym-logUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-gym-log-gym-logUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		880D7D28765AC9C8E3A3C4717496A23D /* M13CheckboxRadioPathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxRadioPathGenerator.swift; path = Sources/Paths/M13CheckboxRadioPathGenerator.swift; sourceTree = "<group>"; };
+		8C66840F8DB62B36EA1FD399E0D622B7 /* M13Checkbox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = M13Checkbox.xcconfig; sourceTree = "<group>"; };
+		8F3A261B2355C14AEEFB161A16F8C9F0 /* Pods-gym-logTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-gym-logTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		94BB241540E44D8637BCEBFB5FE5A206 /* M13CheckboxAnimationGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxAnimationGenerator.swift; path = Sources/M13CheckboxAnimationGenerator.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A8E7EC99A5C327D1336935BA7278051B /* Pods-gym-log.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-gym-log.debug.xcconfig"; sourceTree = "<group>"; };
-		AE13A309B737651D9CBD275E39464BB8 /* Pods-gym-logTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-gym-logTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B4C4871B8667CEBBCDCACACB8171598A /* Pods-gym-log-gym-logUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-gym-log-gym-logUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BB48461B6908BEDF0BFBAEEAB1C37C2A /* Pods-gym-log-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-gym-log-Info.plist"; sourceTree = "<group>"; };
-		BCD7B643933EC5EAD0D19725FBFD72A7 /* Pods-gym-log-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-gym-log-umbrella.h"; sourceTree = "<group>"; };
-		C0F72671514912B6BC855EB2045AB0C9 /* Pods-gym-log-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-gym-log-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C88CD08AE37924A7AC60AB1CCFAC4B20 /* Pods-gym-logTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-gym-logTests-umbrella.h"; sourceTree = "<group>"; };
-		D85344758F4EC9A5730749A8A17448AE /* Pods-gym-log.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-gym-log.release.xcconfig"; sourceTree = "<group>"; };
-		DD0EDF6957AA43E9CE66FBACE6F8316D /* Pods-gym-log-gym-logUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-gym-log-gym-logUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9EE048C201E7502747682B03BE0E4ED1 /* M13CheckboxFadeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFadeController.swift; path = Sources/Managers/M13CheckboxFadeController.swift; sourceTree = "<group>"; };
+		AE32D4AFE65B00CD487BF04E69B52952 /* M13Checkbox-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "M13Checkbox-Info.plist"; sourceTree = "<group>"; };
+		AF1260CEFF1E267ADAE63B39AEA07973 /* Pods-gym-log-gym-logUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-gym-log-gym-logUITests-Info.plist"; sourceTree = "<group>"; };
+		AF913A7ED3543A9999C32783DA287561 /* Pods-gym-log-gym-logUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-gym-log-gym-logUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B82B3A8E06131379730D362E99C4B472 /* M13CheckboxCheckPathGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxCheckPathGenerator.swift; path = Sources/Paths/M13CheckboxCheckPathGenerator.swift; sourceTree = "<group>"; };
+		C8B6C15FC833B4D6BF17B64AABE8AE14 /* M13CheckboxFlatController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxFlatController.swift; path = Sources/Managers/M13CheckboxFlatController.swift; sourceTree = "<group>"; };
+		CC68B3A86E6425551F8AFB78F1A998ED /* M13Checkbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "M13Checkbox-dummy.m"; sourceTree = "<group>"; };
+		D294A81CEC923737F257060FBD516F64 /* M13Checkbox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13Checkbox-prefix.pch"; sourceTree = "<group>"; };
+		D6B31614AF905AFD7C6B50869A780683 /* Pods-gym-logTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-gym-logTests-umbrella.h"; sourceTree = "<group>"; };
+		D96B3DBBBE7519C96D35DFD0B7459792 /* M13CheckboxSpiralController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxSpiralController.swift; path = Sources/Managers/M13CheckboxSpiralController.swift; sourceTree = "<group>"; };
+		DAF933D2FC06E6B883A45C0CA17E9744 /* M13CheckboxDotController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxDotController.swift; path = Sources/Managers/M13CheckboxDotController.swift; sourceTree = "<group>"; };
 		E9E508029FE3071A2748E170BB7CFC4C /* Pods_gym_logTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_gym_logTests.framework; path = "Pods-gym-logTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA4110DF07ABE9F4A4544D662CDACA1E /* Pods-gym-logTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-gym-logTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EAE523114A05177E0CC9B6E0F1AB178E /* M13CheckboxController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = M13CheckboxController.swift; path = Sources/M13CheckboxController.swift; sourceTree = "<group>"; };
+		EE9BB0A359A5567A9CC9FD9F9E9D6AF6 /* DefaultValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultValues.swift; path = Sources/DefaultValues.swift; sourceTree = "<group>"; };
+		F1BC6783A11799451809A68DD42EEA0E /* Pods-gym-logTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-gym-logTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F9EAA082CDD2E1968935A20BB6B013A3 /* Pods-gym-log.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-gym-log.modulemap"; sourceTree = "<group>"; };
+		FD608BCCF279B1277BB911F33106997F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		57216CAE461B48C9F4DF2902AC52E14E /* Frameworks */ = {
+		044E0DF3E8A742E72242925B2FFEF0FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BC7917F216A947616B4EF096E78D88D /* Foundation.framework in Frameworks */,
+				7AF77E6823887DFE89A3E24E9E57A34E /* CoreGraphics.framework in Frameworks */,
+				2229A6998218AC6DFF497473500021C7 /* Foundation.framework in Frameworks */,
+				690A3616858F1EF14011B02B88924458 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57988F54F7A49234A4A72EACDA18FB2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58CAF7CDFFE29183F83F05E53A24DEBD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,52 +155,118 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC550C9632F3B443A9C2741EBD1294E2 /* Frameworks */ = {
+		9B435501F7E4CB7C8DAC3DC448899F3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD0F041F368028FF9AB8D8E3AD7F8722 /* Foundation.framework in Frameworks */,
+				ABD255A9E2627DB24C95535AD6A69B19 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12B192445CF5BC9B9DE2424F9246258F /* Pods-gym-log */ = {
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				60B21E1F86ABB0284340AE9E0679D8FF /* Pods-gym-log.modulemap */,
-				C0F72671514912B6BC855EB2045AB0C9 /* Pods-gym-log-acknowledgements.markdown */,
-				704B29D60EDAF5BDC9C47DCDF8FF22BE /* Pods-gym-log-acknowledgements.plist */,
-				2ABC987E4C737008982BF2723AD328A9 /* Pods-gym-log-dummy.m */,
-				BB48461B6908BEDF0BFBAEEAB1C37C2A /* Pods-gym-log-Info.plist */,
-				BCD7B643933EC5EAD0D19725FBFD72A7 /* Pods-gym-log-umbrella.h */,
-				A8E7EC99A5C327D1336935BA7278051B /* Pods-gym-log.debug.xcconfig */,
-				D85344758F4EC9A5730749A8A17448AE /* Pods-gym-log.release.xcconfig */,
+				ABE8076CBFEE71A3B199C34F20F66745 /* iOS */,
 			);
-			name = "Pods-gym-log";
-			path = "Target Support Files/Pods-gym-log";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1CC001225A785D52EE1B1CA49C37664A /* Pods-gym-logTests */ = {
+		743EEC8C317946F34040F029A1C07E5C /* Pods-gym-log-gym-logUITests */ = {
 			isa = PBXGroup;
 			children = (
-				53B9B3201A2ADE87D0031115FE6DDDAE /* Pods-gym-logTests.modulemap */,
-				AE13A309B737651D9CBD275E39464BB8 /* Pods-gym-logTests-acknowledgements.markdown */,
-				FA4110DF07ABE9F4A4544D662CDACA1E /* Pods-gym-logTests-acknowledgements.plist */,
-				00229059625FB28986F10DA9401D1FDD /* Pods-gym-logTests-dummy.m */,
-				6FF568A40CD8E0A48C43E7E29D6C8EC2 /* Pods-gym-logTests-Info.plist */,
-				C88CD08AE37924A7AC60AB1CCFAC4B20 /* Pods-gym-logTests-umbrella.h */,
-				1F4B14F3F2F17594C0D61326584688E0 /* Pods-gym-logTests.debug.xcconfig */,
-				704D7C6DC2745989C962488B51291B13 /* Pods-gym-logTests.release.xcconfig */,
+				548B1C28C7D21BABB5971A3A20001CEC /* Pods-gym-log-gym-logUITests.modulemap */,
+				AF913A7ED3543A9999C32783DA287561 /* Pods-gym-log-gym-logUITests-acknowledgements.markdown */,
+				82C705324E25B46475267FF294BFDC02 /* Pods-gym-log-gym-logUITests-acknowledgements.plist */,
+				01D5C41F26890827325C649833C7A862 /* Pods-gym-log-gym-logUITests-dummy.m */,
+				07A7C899C45FAF510C7ADAD0CAC8D189 /* Pods-gym-log-gym-logUITests-frameworks.sh */,
+				AF1260CEFF1E267ADAE63B39AEA07973 /* Pods-gym-log-gym-logUITests-Info.plist */,
+				512A663AA4CBF9CBD9A3E9896478793F /* Pods-gym-log-gym-logUITests-umbrella.h */,
+				276ED6BA475229B34B6C1EFD734696FB /* Pods-gym-log-gym-logUITests.debug.xcconfig */,
+				4F76884C294A7C8750FA9D06A32E7FBD /* Pods-gym-log-gym-logUITests.release.xcconfig */,
+			);
+			name = "Pods-gym-log-gym-logUITests";
+			path = "Target Support Files/Pods-gym-log-gym-logUITests";
+			sourceTree = "<group>";
+		};
+		9CA337DB02C2B7FF00F49DAC41507D2C /* M13Checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				EE9BB0A359A5567A9CC9FD9F9E9D6AF6 /* DefaultValues.swift */,
+				4AE329607D72E8ACD6EC21D9D45F9B04 /* M13Checkbox.swift */,
+				5E2C72EDC8A036D53426A667ACB604A1 /* M13Checkbox+IB.swift */,
+				2E59F6FCC139E86AEDDD7D75615F9B7F /* M13CheckboxAddRemovePathGenerator.swift */,
+				94BB241540E44D8637BCEBFB5FE5A206 /* M13CheckboxAnimationGenerator.swift */,
+				5CB44EADFD8CD7B21C070D947A015621 /* M13CheckboxBounceController.swift */,
+				B82B3A8E06131379730D362E99C4B472 /* M13CheckboxCheckPathGenerator.swift */,
+				EAE523114A05177E0CC9B6E0F1AB178E /* M13CheckboxController.swift */,
+				5840952A04CFAA95BA336043AC1A5F65 /* M13CheckboxDisclosurePathGenerator.swift */,
+				DAF933D2FC06E6B883A45C0CA17E9744 /* M13CheckboxDotController.swift */,
+				2FFF75A31482EB977ED79742A727D629 /* M13CheckboxExpandController.swift */,
+				9EE048C201E7502747682B03BE0E4ED1 /* M13CheckboxFadeController.swift */,
+				3FC0E6830D3153501694B068A9F3DFB9 /* M13CheckboxFillController.swift */,
+				C8B6C15FC833B4D6BF17B64AABE8AE14 /* M13CheckboxFlatController.swift */,
+				11ADEBBF9F6508F304908F924047B31B /* M13CheckboxGestureRecognizer.swift */,
+				2B78B80CAB1AAF8B4F0667C0E88E74D4 /* M13CheckboxPathGenerator.swift */,
+				880D7D28765AC9C8E3A3C4717496A23D /* M13CheckboxRadioPathGenerator.swift */,
+				D96B3DBBBE7519C96D35DFD0B7459792 /* M13CheckboxSpiralController.swift */,
+				1DD7B1DC2B91101DEC2FD9E8781A5530 /* M13CheckboxStrokeController.swift */,
+				F082AFF79FBCD89D49823EFDBBCFDFBE /* Support Files */,
+			);
+			name = M13Checkbox;
+			path = M13Checkbox;
+			sourceTree = "<group>";
+		};
+		A4C0F3CA1DBB4974112D58B346BEC7C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CA337DB02C2B7FF00F49DAC41507D2C /* M13Checkbox */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ABE8076CBFEE71A3B199C34F20F66745 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				276842F3A283EE87124FE6C3EAAFD184 /* CoreGraphics.framework */,
+				FD608BCCF279B1277BB911F33106997F /* Foundation.framework */,
+				01BDA658338AD3813D969D7011B56B8D /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B0E4C67A45D5CD6C4837A4BABB1C13D0 /* Pods-gym-logTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C4E39A95A534146DCAC1BFA715A47C0 /* Pods-gym-logTests.modulemap */,
+				F1BC6783A11799451809A68DD42EEA0E /* Pods-gym-logTests-acknowledgements.markdown */,
+				8F3A261B2355C14AEEFB161A16F8C9F0 /* Pods-gym-logTests-acknowledgements.plist */,
+				3DBA8FC81A44C5774565A25DC277F3EE /* Pods-gym-logTests-dummy.m */,
+				64F3A45E4C86E970B436E0EC328EE07E /* Pods-gym-logTests-Info.plist */,
+				D6B31614AF905AFD7C6B50869A780683 /* Pods-gym-logTests-umbrella.h */,
+				79B15E700FA404B4D4FD943366CDC980 /* Pods-gym-logTests.debug.xcconfig */,
+				28512E54BDA4B7716A0AD85DDCDBC552 /* Pods-gym-logTests.release.xcconfig */,
 			);
 			name = "Pods-gym-logTests";
 			path = "Target Support Files/Pods-gym-logTests";
 			sourceTree = "<group>";
 		};
-		93CFC3ECC70641A2181AFAA914A9F29A /* Products */ = {
+		C50A99E8B42304A4C2B80CA86B0FEB25 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				EB17F4DC0ADCC9FC1F02B4A8D24FA665 /* Pods-gym-log */,
+				743EEC8C317946F34040F029A1C07E5C /* Pods-gym-log-gym-logUITests */,
+				B0E4C67A45D5CD6C4837A4BABB1C13D0 /* Pods-gym-logTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C9A92AD7A26FAE70CD082A9E4EE8F23A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CE79C5BF20743404E59BEFD080A364D /* M13Checkbox.framework */,
 				5D3192B790A6D73EE7BA6F65E14AD163 /* Pods_gym_log.framework */,
 				657EE7171DE20E7F09EC52C1296DBA67 /* Pods_gym_log_gym_logUITests.framework */,
 				E9E508029FE3071A2748E170BB7CFC4C /* Pods_gym_logTests.framework */,
@@ -130,61 +274,59 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				93CFC3ECC70641A2181AFAA914A9F29A /* Products */,
-				F138186CDA2C7D0080F07E1F1F8A1905 /* Targets Support Files */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				A4C0F3CA1DBB4974112D58B346BEC7C9 /* Pods */,
+				C9A92AD7A26FAE70CD082A9E4EE8F23A /* Products */,
+				C50A99E8B42304A4C2B80CA86B0FEB25 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		EB17F4DC0ADCC9FC1F02B4A8D24FA665 /* Pods-gym-log */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				F9EAA082CDD2E1968935A20BB6B013A3 /* Pods-gym-log.modulemap */,
+				7D3416182978D9DD7089E2B4B77EEA50 /* Pods-gym-log-acknowledgements.markdown */,
+				07CAC4FDA28EE8CAAEF8F6450FAB8A0C /* Pods-gym-log-acknowledgements.plist */,
+				3685FE9436236740F762E5DAF7B75468 /* Pods-gym-log-dummy.m */,
+				0CD6E01D76EB247FEAE7D5FAEBD5DE39 /* Pods-gym-log-frameworks.sh */,
+				4FEE3E873DDDD20F72CAE0B9740BC1AD /* Pods-gym-log-Info.plist */,
+				29E616609063E680EC0CE19C2DD5027E /* Pods-gym-log-umbrella.h */,
+				6797937F1135D02B74D372E70C55D732 /* Pods-gym-log.debug.xcconfig */,
+				16B505EC5313A7FDD65907B62EA4AF48 /* Pods-gym-log.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Pods-gym-log";
+			path = "Target Support Files/Pods-gym-log";
 			sourceTree = "<group>";
 		};
-		F138186CDA2C7D0080F07E1F1F8A1905 /* Targets Support Files */ = {
+		F082AFF79FBCD89D49823EFDBBCFDFBE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				12B192445CF5BC9B9DE2424F9246258F /* Pods-gym-log */,
-				F3BF521DECA5E2C04ECF3F012F2EC7F4 /* Pods-gym-log-gym-logUITests */,
-				1CC001225A785D52EE1B1CA49C37664A /* Pods-gym-logTests */,
+				3CC976CE0F98D3CF3AA06C0E12F25A02 /* M13Checkbox.modulemap */,
+				8C66840F8DB62B36EA1FD399E0D622B7 /* M13Checkbox.xcconfig */,
+				CC68B3A86E6425551F8AFB78F1A998ED /* M13Checkbox-dummy.m */,
+				AE32D4AFE65B00CD487BF04E69B52952 /* M13Checkbox-Info.plist */,
+				D294A81CEC923737F257060FBD516F64 /* M13Checkbox-prefix.pch */,
+				52C8B82D0BDB8346230E4CF784460AF8 /* M13Checkbox-umbrella.h */,
 			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F3BF521DECA5E2C04ECF3F012F2EC7F4 /* Pods-gym-log-gym-logUITests */ = {
-			isa = PBXGroup;
-			children = (
-				03B5E74F7D25D93220C656C20A02498D /* Pods-gym-log-gym-logUITests.modulemap */,
-				36C9C107656CB0516B0BBFC2C861B26E /* Pods-gym-log-gym-logUITests-acknowledgements.markdown */,
-				DD0EDF6957AA43E9CE66FBACE6F8316D /* Pods-gym-log-gym-logUITests-acknowledgements.plist */,
-				3810D9A56F9D34CF3D03383933F5E350 /* Pods-gym-log-gym-logUITests-dummy.m */,
-				1FB88E4E8C47F66602145AC64F17ACD3 /* Pods-gym-log-gym-logUITests-Info.plist */,
-				464CE28A11CBACB0077127291185E3D5 /* Pods-gym-log-gym-logUITests-umbrella.h */,
-				B4C4871B8667CEBBCDCACACB8171598A /* Pods-gym-log-gym-logUITests.debug.xcconfig */,
-				276C6EFE3A77FECF15750D98A07266FC /* Pods-gym-log-gym-logUITests.release.xcconfig */,
-			);
-			name = "Pods-gym-log-gym-logUITests";
-			path = "Target Support Files/Pods-gym-log-gym-logUITests";
+			name = "Support Files";
+			path = "../Target Support Files/M13Checkbox";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		13125A8F0CC7BE374AA4E6F13EBC7F64 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97488E77760F54B100BDF6D4E17D377F /* Pods-gym-log-gym-logUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		176FBB21BC6C0A7803E9B87ADC4FFCCA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,37 +335,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		21AA7BED8C3CEEB7BF86B48E03E35E5C /* Headers */ = {
+		9835E4D0FD526449A037FE580E45CA8F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFCF9C720F380FEE3D032B8BF62482E4 /* Pods-gym-log-umbrella.h in Headers */,
+				89DE0C94B223F24F8A4934F5012E6DBC /* Pods-gym-log-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBB780CD0281BEBABB84430F2478429F /* Headers */ = {
+		E2451AF72D6F6E49E6DDD89EBEB5F3B0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99E2710E60363DC4873EDE5C4CEDC010 /* Pods-gym-log-gym-logUITests-umbrella.h in Headers */,
+				CA89E0222ABBC43F957E4F3BF7F46142 /* M13Checkbox-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		79E0643392FF673F4778CCCF7E1C161E /* Pods-gym-log-gym-logUITests */ = {
+		7111E54EAE43E89F451A75076C3525ED /* M13Checkbox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F5ABA0E076D7D73DE2B28004F18B8AC0 /* Build configuration list for PBXNativeTarget "Pods-gym-log-gym-logUITests" */;
+			buildConfigurationList = 0C969E3F923CFEC15B65102F99FD224A /* Build configuration list for PBXNativeTarget "M13Checkbox" */;
 			buildPhases = (
-				CBB780CD0281BEBABB84430F2478429F /* Headers */,
-				035495950548FF6DC33C4FC9A55DFD08 /* Sources */,
-				57216CAE461B48C9F4DF2902AC52E14E /* Frameworks */,
-				1E3E895C12D862C5A0690F81E2E06819 /* Resources */,
+				E2451AF72D6F6E49E6DDD89EBEB5F3B0 /* Headers */,
+				503F91742D9CCF37EC57DE6A97BFC95F /* Sources */,
+				044E0DF3E8A742E72242925B2FFEF0FE /* Frameworks */,
+				5CD1EAD0AB3217599754FFDCB8C48357 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = M13Checkbox;
+			productName = M13Checkbox;
+			productReference = 5CE79C5BF20743404E59BEFD080A364D /* M13Checkbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		79E0643392FF673F4778CCCF7E1C161E /* Pods-gym-log-gym-logUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C0607787B1A20E0CF94B373C1F65FD2 /* Build configuration list for PBXNativeTarget "Pods-gym-log-gym-logUITests" */;
+			buildPhases = (
+				13125A8F0CC7BE374AA4E6F13EBC7F64 /* Headers */,
+				48487F24D5693CF204749BDCF3301FDE /* Sources */,
+				9B435501F7E4CB7C8DAC3DC448899F3A /* Frameworks */,
+				C665E53C8A670A9141985005AB6FF8EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89CF2DD7466F96509828B9E212A32EC6 /* PBXTargetDependency */,
 			);
 			name = "Pods-gym-log-gym-logUITests";
 			productName = "Pods-gym-log-gym-logUITests";
@@ -251,16 +412,17 @@
 		};
 		FEDA587163845AE517BBB1A23CBA4E98 /* Pods-gym-log */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDA2986DB933291D004DA9EF23D09AEA /* Build configuration list for PBXNativeTarget "Pods-gym-log" */;
+			buildConfigurationList = D92DBC847B0D63347124CC4790254F77 /* Build configuration list for PBXNativeTarget "Pods-gym-log" */;
 			buildPhases = (
-				21AA7BED8C3CEEB7BF86B48E03E35E5C /* Headers */,
-				36BED5924DA460682891C598217996AC /* Sources */,
-				CC550C9632F3B443A9C2741EBD1294E2 /* Frameworks */,
-				5B59AC61801C68D7F4802F6EFE55CD6C /* Resources */,
+				9835E4D0FD526449A037FE580E45CA8F /* Headers */,
+				08471F2FB13C8B2C5436D194404029AB /* Sources */,
+				57988F54F7A49234A4A72EACDA18FB2F /* Frameworks */,
+				41DDB19BCA6C11884A69309CB53DBFC1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2C97475960D7BB925C170CF756D531C5 /* PBXTargetDependency */,
 			);
 			name = "Pods-gym-log";
 			productName = "Pods-gym-log";
@@ -285,10 +447,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 93CFC3ECC70641A2181AFAA914A9F29A /* Products */;
+			productRefGroup = C9A92AD7A26FAE70CD082A9E4EE8F23A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				7111E54EAE43E89F451A75076C3525ED /* M13Checkbox */,
 				FEDA587163845AE517BBB1A23CBA4E98 /* Pods-gym-log */,
 				79E0643392FF673F4778CCCF7E1C161E /* Pods-gym-log-gym-logUITests */,
 				CDDDCF825F674140AFB7CC4C7D11D009 /* Pods-gym-logTests */,
@@ -297,14 +460,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1E3E895C12D862C5A0690F81E2E06819 /* Resources */ = {
+		41DDB19BCA6C11884A69309CB53DBFC1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B59AC61801C68D7F4802F6EFE55CD6C /* Resources */ = {
+		5CD1EAD0AB3217599754FFDCB8C48357 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,14 +481,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C665E53C8A670A9141985005AB6FF8EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		035495950548FF6DC33C4FC9A55DFD08 /* Sources */ = {
+		08471F2FB13C8B2C5436D194404029AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A10570B729416AE87E997F1CB623988 /* Pods-gym-log-gym-logUITests-dummy.m in Sources */,
+				BDA2C8A3498EA6E4DBF815571102DFD3 /* Pods-gym-log-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,29 +507,68 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36BED5924DA460682891C598217996AC /* Sources */ = {
+		48487F24D5693CF204749BDCF3301FDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04955C5E6B6A7B251F9EE9DA7F1CBBDE /* Pods-gym-log-dummy.m in Sources */,
+				0CB32C5503CB88835E8FE99FBC350ED4 /* Pods-gym-log-gym-logUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503F91742D9CCF37EC57DE6A97BFC95F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E08B31BE69E7F9FD79F888D6878470CE /* DefaultValues.swift in Sources */,
+				B642D0A666A7B76CE25C412820331536 /* M13Checkbox+IB.swift in Sources */,
+				254315B3201BB02B083E2B189DD456E3 /* M13Checkbox-dummy.m in Sources */,
+				A14D173D1A208AE9ADB6419B6BFBF426 /* M13Checkbox.swift in Sources */,
+				A7448C3B3357059EE87853CFF2BE09C4 /* M13CheckboxAddRemovePathGenerator.swift in Sources */,
+				97A18E7CA66BA87E83A038BF75B2DCB2 /* M13CheckboxAnimationGenerator.swift in Sources */,
+				D035EDC528DBF5BA980CDF5299828034 /* M13CheckboxBounceController.swift in Sources */,
+				E9D6E5290AA728E26BB83686BABD683A /* M13CheckboxCheckPathGenerator.swift in Sources */,
+				D5584524FE609C7CD27E83BCB74CE685 /* M13CheckboxController.swift in Sources */,
+				91DE47E4BCDE92CC97123C314723B3A8 /* M13CheckboxDisclosurePathGenerator.swift in Sources */,
+				B323D65D6BE2950D9615F791E7A90A7F /* M13CheckboxDotController.swift in Sources */,
+				56BC1A6298E10CCE7703ADBC5AD48FAC /* M13CheckboxExpandController.swift in Sources */,
+				FF6BF71F784703DB5F302C257245A51B /* M13CheckboxFadeController.swift in Sources */,
+				B0471D9061D1AE1F54C08242A5773ECF /* M13CheckboxFillController.swift in Sources */,
+				0348E72A279882575367B52CE6A0C2B1 /* M13CheckboxFlatController.swift in Sources */,
+				3E3EB29E1A912DA51B5A537C152AA490 /* M13CheckboxGestureRecognizer.swift in Sources */,
+				C2BA008A914F681607429815D2EDEA95 /* M13CheckboxPathGenerator.swift in Sources */,
+				99FBBAF5AEB8A1895DAB1752E3AB115C /* M13CheckboxRadioPathGenerator.swift in Sources */,
+				AE32CE1F494D51291E92F6B0C29D7034 /* M13CheckboxSpiralController.swift in Sources */,
+				54295CEF5B5271B336B17776A282D3C6 /* M13CheckboxStrokeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2C97475960D7BB925C170CF756D531C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = M13Checkbox;
+			target = 7111E54EAE43E89F451A75076C3525ED /* M13Checkbox */;
+			targetProxy = 25AD13C9CFBB0F8FC94DEA437104B884 /* PBXContainerItemProxy */;
+		};
 		7CC473C786896073D07654D90A2CFDDD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-gym-log";
 			target = FEDA587163845AE517BBB1A23CBA4E98 /* Pods-gym-log */;
 			targetProxy = 02193024985770D487C28F74E10AD2FE /* PBXContainerItemProxy */;
 		};
+		89CF2DD7466F96509828B9E212A32EC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = M13Checkbox;
+			target = 7111E54EAE43E89F451A75076C3525ED /* M13Checkbox */;
+			targetProxy = 9295981D9B880DB13C49A6C2D646CDBF /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1B84445770F2F90421A30D0AC9874269 /* Debug */ = {
+		5CA07B5803A670A5F5CDFD4565657C9C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4C4871B8667CEBBCDCACACB8171598A /* Pods-gym-log-gym-logUITests.debug.xcconfig */;
+			baseConfigurationReference = 16B505EC5313A7FDD65907B62EA4AF48 /* Pods-gym-log.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -372,7 +581,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-gym-log-gym-logUITests/Pods-gym-log-gym-logUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-gym-log/Pods-gym-log-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -381,7 +590,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-gym-log-gym-logUITests/Pods-gym-log-gym-logUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-gym-log/Pods-gym-log.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -390,14 +599,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		5CA4B5B568A59CA82C881BA6F6C21B13 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 704D7C6DC2745989C962488B51291B13 /* Pods-gym-logTests.release.xcconfig */;
+			baseConfigurationReference = 28512E54BDA4B7716A0AD85DDCDBC552 /* Pods-gym-logTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -427,6 +637,77 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7FBC2164C77486E1C6CE0ACCD088B56F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C66840F8DB62B36EA1FD399E0D622B7 /* M13Checkbox.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/M13Checkbox/M13Checkbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/M13Checkbox/M13Checkbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/M13Checkbox/M13Checkbox.modulemap";
+				PRODUCT_MODULE_NAME = M13Checkbox;
+				PRODUCT_NAME = M13Checkbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		856A4A3102DF1AB41D672284C54D29F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C66840F8DB62B36EA1FD399E0D622B7 /* M13Checkbox.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/M13Checkbox/M13Checkbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/M13Checkbox/M13Checkbox-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/M13Checkbox/M13Checkbox.modulemap";
+				PRODUCT_MODULE_NAME = M13Checkbox;
+				PRODUCT_NAME = M13Checkbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -498,9 +779,9 @@
 			};
 			name = Debug;
 		};
-		B08273E04456311A88FEA1CC4F300C92 /* Release */ = {
+		93E4E0ADD9C3E05E62C087B37EAB33C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 276C6EFE3A77FECF15750D98A07266FC /* Pods-gym-log-gym-logUITests.release.xcconfig */;
+			baseConfigurationReference = 4F76884C294A7C8750FA9D06A32E7FBD /* Pods-gym-log-gym-logUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -537,9 +818,47 @@
 			};
 			name = Release;
 		};
-		BC2628C582895BF5610AEEFF1A485869 /* Debug */ = {
+		B6A4EABCFDCC143013E820D29B2D38D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8E7EC99A5C327D1336935BA7278051B /* Pods-gym-log.debug.xcconfig */;
+			baseConfigurationReference = 276ED6BA475229B34B6C1EFD734696FB /* Pods-gym-log-gym-logUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-gym-log-gym-logUITests/Pods-gym-log-gym-logUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-gym-log-gym-logUITests/Pods-gym-log-gym-logUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D2537B3C76A7CCA88A5B6384CB3A7E14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6797937F1135D02B74D372E70C55D732 /* Pods-gym-log.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -577,7 +896,7 @@
 		};
 		E21A154A58CEE31FCC7CFB5FFF7F06A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F4B14F3F2F17594C0D61326584688E0 /* Pods-gym-logTests.debug.xcconfig */;
+			baseConfigurationReference = 79B15E700FA404B4D4FD943366CDC980 /* Pods-gym-logTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -612,45 +931,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		E357F6ABF8A814DE81DAFA695DEB9F7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D85344758F4EC9A5730749A8A17448AE /* Pods-gym-log.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-gym-log/Pods-gym-log-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-gym-log/Pods-gym-log.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -715,11 +995,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0C969E3F923CFEC15B65102F99FD224A /* Build configuration list for PBXNativeTarget "M13Checkbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FBC2164C77486E1C6CE0ACCD088B56F /* Debug */,
+				856A4A3102DF1AB41D672284C54D29F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
 				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C0607787B1A20E0CF94B373C1F65FD2 /* Build configuration list for PBXNativeTarget "Pods-gym-log-gym-logUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6A4EABCFDCC143013E820D29B2D38D6 /* Debug */,
+				93E4E0ADD9C3E05E62C087B37EAB33C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -733,20 +1031,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F5ABA0E076D7D73DE2B28004F18B8AC0 /* Build configuration list for PBXNativeTarget "Pods-gym-log-gym-logUITests" */ = {
+		D92DBC847B0D63347124CC4790254F77 /* Build configuration list for PBXNativeTarget "Pods-gym-log" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1B84445770F2F90421A30D0AC9874269 /* Debug */,
-				B08273E04456311A88FEA1CC4F300C92 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FDA2986DB933291D004DA9EF23D09AEA /* Build configuration list for PBXNativeTarget "Pods-gym-log" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BC2628C582895BF5610AEEFF1A485869 /* Debug */,
-				E357F6ABF8A814DE81DAFA695DEB9F7A /* Release */,
+				D2537B3C76A7CCA88A5B6384CB3A7E14 /* Debug */,
+				5CA07B5803A670A5F5CDFD4565657C9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

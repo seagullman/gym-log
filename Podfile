@@ -6,6 +6,7 @@ target 'gym-log' do
   use_frameworks!
 
   # Pods for gym-log
+  pod 'M13Checkbox'
 
   target 'gym-logTests' do
     inherit! :search_paths

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="18G2022" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Exercise" representedClassName=".Exercise" syncable="YES" codeGenerationType="category">
+        <attribute name="completed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="numberOfReps" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="numberOfSets" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="exerciseDescriptions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ExerciseDescription" inverseName="exercise" inverseEntity="ExerciseDescription"/>
+        <relationship name="workout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="exercises" inverseEntity="Workout"/>
+    </entity>
+    <entity name="ExerciseDescription" representedClassName=".ExerciseDescription" syncable="YES" codeGenerationType="category">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="exerciseDescription" optional="YES" attributeType="String"/>
+        <relationship name="exercise" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="exerciseDescriptions" inverseEntity="Exercise"/>
+    </entity>
+    <entity name="Workout" representedClassName=".Workout" syncable="YES" codeGenerationType="category">
+        <attribute name="completed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercise" inverseName="workout" inverseEntity="Exercise"/>
+    </entity>
+    <elements>
+        <element name="Exercise" positionX="-1880.1015625" positionY="1334.14453125" width="128" height="178"/>
+        <element name="ExerciseDescription" positionX="-1610.61328125" positionY="1400.42578125" width="128" height="88"/>
+        <element name="Workout" positionX="-2153.19140625" positionY="1367.6484375" width="128" height="118"/>
+    </elements>
+</model>
