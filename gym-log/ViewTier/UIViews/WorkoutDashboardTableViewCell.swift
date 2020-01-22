@@ -10,5 +10,9 @@ import UIKit
 
 public class WorkoutDashboardTableViewCell: UITableViewCell {
     @IBOutlet weak var stackView: UIStackView!
-    @IBOutlet weak var workoutTitleLabel: UILabel!
+    
+    public override func prepareForReuse() {
+        super.prepareForReuse()
+        _ = self.stackView.arrangedSubviews.map { self.stackView.removeArrangedSubview($0) }
+    }
 }

@@ -9,18 +9,27 @@
 import Foundation
 
 
-public protocol ExerciseSM {}
+public protocol ExerciseSM {
+    var name: String { get }
+    var managedObject: Exercise { get }
+    var completed: Bool { get }
+}
 
 public struct WarmUpExerciseSM: ExerciseSM {
     
-    private let exerciseDM: ExerciseDM
+    private let exerciseDM: Exercise
     
-    public init(exerciseDM: ExerciseDM) {
+    public init(exerciseDM: Exercise) {
         self.exerciseDM = exerciseDM
     }
     
     public var type: ExerciseType {
-        return self.exerciseDM.type
+        guard let _type = ExerciseType(rawValue: self.exerciseDM.type) else {
+            NSLog("***** FATAL ERROR: invalid ExerciseType fetched")
+            abort()
+        }
+        
+        return _type
     }
     
     public var typeString: String {
@@ -30,18 +39,31 @@ public struct WarmUpExerciseSM: ExerciseSM {
     public var name: String {
         return self.exerciseDM.name ?? ""
     }
+    
+    public var completed: Bool {
+        return self.exerciseDM.completed
+    }
+    
+    public var managedObject: Exercise {
+        return self.exerciseDM
+    }
 }
 
 public struct SingleExerciseSM: ExerciseSM {
     
-    private let exerciseDM: ExerciseDM
+    private let exerciseDM: Exercise
     
-    public init(exerciseDM: ExerciseDM) {
+    public init(exerciseDM: Exercise) {
         self.exerciseDM = exerciseDM
     }
     
     public var type: ExerciseType {
-        return self.exerciseDM.type
+        guard let _type = ExerciseType(rawValue: self.exerciseDM.type) else {
+            NSLog("***** FATAL ERROR: invalid ExerciseType fetched")
+            abort()
+        }
+        
+        return _type
     }
     
     public var typeString: String {
@@ -52,30 +74,44 @@ public struct SingleExerciseSM: ExerciseSM {
         return self.exerciseDM.name ?? ""
     }
     
+    public var completed: Bool {
+         return self.exerciseDM.completed
+     }
+    
     public var numberOfSets: String {
-        guard let sets = self.exerciseDM.numberOfSets else { return "" }
+        let sets = self.exerciseDM.numberOfSets
+        if (sets == 0) { return "" }
         
         return String(sets)
     }
     
     public var numberOfReps: String {
-        guard let reps = self.exerciseDM.numberOfReps else { return "" }
-        
+        let reps = self.exerciseDM.numberOfReps
+        if (reps == 0) { return "" }
         return String(reps)
+    }
+    
+    public var managedObject: Exercise {
+        return self.exerciseDM
     }
     
 }
 
 public struct SuperSetExerciseSM: ExerciseSM {
     
-    private let exerciseDM: ExerciseDM
+    private let exerciseDM: Exercise
     
-    public init(exerciseDM: ExerciseDM) {
+    public init(exerciseDM: Exercise) {
         self.exerciseDM = exerciseDM
     }
     
     public var type: ExerciseType {
-        return self.exerciseDM.type
+        guard let _type = ExerciseType(rawValue: self.exerciseDM.type) else {
+            NSLog("***** FATAL ERROR: invalid ExerciseType fetched")
+            abort()
+        }
+        
+        return _type
     }
     
     public var typeString: String {
@@ -86,36 +122,64 @@ public struct SuperSetExerciseSM: ExerciseSM {
         return self.exerciseDM.name ?? ""
     }
     
+    public var completed: Bool {
+         return self.exerciseDM.completed
+     }
+    
     public var numberOfSets: String {
-        guard let sets = self.exerciseDM.numberOfSets else { return "" }
+        let sets = self.exerciseDM.numberOfSets
+        if (sets == 0) { return "" }
         
         return String(sets)
     }
     
     public var numberOfReps: String {
-        guard let reps = self.exerciseDM.numberOfReps else { return "" }
-        
+        let reps = self.exerciseDM.numberOfReps
+        if (reps == 0) { return "" }
         return String(reps)
     }
     
+    public var managedObject: Exercise {
+        return self.exerciseDM
+    }
+    
     public var exerciseDescriptions: [String] {
-        guard let descriptions = self.exerciseDM.exerciseDescriptions else { return [] }
+        guard
+            let _descriptions = self.exerciseDM.exerciseDescriptions,
+            let descriptionObjs: [ExerciseDescription] = _descriptions.allObjects as? [ExerciseDescription]
+        else { return [] }
         
-        return descriptions
+        var stringArray: [String] = []
+        descriptionObjs.forEach { (desc) in
+            guard let description = desc.exerciseDescription else { return }
+            
+            stringArray.append(description)
+        }
+
+        return stringArray
     }
     
 }
 
 public struct PostLiftExerciseSM: ExerciseSM {
     
-    private let exerciseDM: ExerciseDM
+    private let exerciseDM: Exercise
     
-    public init(exerciseDM: ExerciseDM) {
+    public init(exerciseDM: Exercise) {
         self.exerciseDM = exerciseDM
     }
     
     public var type: ExerciseType {
-        return self.exerciseDM.type
+        guard let _type = ExerciseType(rawValue: self.exerciseDM.type) else {
+            NSLog("***** FATAL ERROR: invalid ExerciseType fetched")
+            abort()
+        }
+        
+        return _type
+    }
+    
+    public var managedObject: Exercise {
+        return self.exerciseDM
     }
     
     public var typeString: String {
@@ -125,5 +189,9 @@ public struct PostLiftExerciseSM: ExerciseSM {
     public var name: String {
         return self.exerciseDM.name ?? ""
     }
+    
+    public var completed: Bool {
+         return self.exerciseDM.completed
+     }
     
 }
