@@ -26,23 +26,8 @@ public class ReadTodaysWorkoutsCommand {
     
     public func execute() -> FutureResult<WorkoutDataSource> {
         let readWorkout = self.readWorkout()
-            .pipe(into: self.convertToScreenModels(workouts:))
+            .pipe(into: convertToWorkoutScreenModels(workouts:))
             .pipe(into: createCustomDataSource(withWorkout:))
         return readWorkout
-    }
-    
-    private func convertToScreenModels(workouts: [Workout]) -> FutureResult<WorkoutScreenModel> {
-        let deferred = DeferredResult<WorkoutScreenModel>()
-        if (workouts.count == 0) {
-            // This is needed so the WorkoutObjectDataSource can be initialized
-            // when there are no workoutouts entered. This will be used by the
-            // UITableView to show the EmptyWorkoutView
-            let emptyWorkoutStub = WorkoutStubSM()
-            deferred.success(value: emptyWorkoutStub)
-        } else {
-            let workoutModel = workouts.map { WorkoutSM(workout: $0) }
-            deferred.success(value: workoutModel[0])
-        }
-        return deferred
     }
 }

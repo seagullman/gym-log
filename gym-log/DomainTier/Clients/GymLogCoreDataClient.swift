@@ -14,6 +14,8 @@ import SPRingboard
 internal protocol CoreDataClient: class {
     func fetchAllWorkouts() -> FutureResult<[Workout]>
     func fetchTodaysWorkout() -> FutureResult<[Workout]>
+    func fetchPreviousWorkouts() -> FutureResult<[Workout]>
+    func fetchWorkoutDetails(with id: UUID) -> FutureResult<Workout>
     func saveWorkout(workout: Workout) -> FutureResult<Bool>
     func toggleExerciseCompleted(exercise: Exercise, completed: Bool) -> FutureResult<Bool>
 }
@@ -48,7 +50,7 @@ internal class CoreDataGymLogClient: CoreDataClient {
         let context = AppDelegate.viewContext
         context.perform {
             let workoutRequest: NSFetchRequest<Workout> = Workout.fetchRequest()
-            workoutRequest.predicate = self.getDatePredicate()
+            workoutRequest.predicate = self.getTodaysDatePredicate()
             
             do {
                 let workouts = try context.fetch(workoutRequest)
@@ -58,6 +60,27 @@ internal class CoreDataGymLogClient: CoreDataClient {
                 NSLog("***** ERROR: fetchAllWorkouts() --> Failed to fetch today's workout")
                 deferred.failure(
                     error: GymLogError.databaseReadError(message: "Failed to fetch today's workout"))
+            }
+        }
+        return deferred
+    }
+    
+    func fetchPreviousWorkouts() -> FutureResult<[Workout]> {
+        let deferred = DeferredResult<[Workout]>()
+        
+        let context = AppDelegate.viewContext
+        context.perform {
+            let workoutRequest: NSFetchRequest<Workout> = Workout.fetchRequest()
+            workoutRequest.predicate = self.getPreviousWorkoutsPredicate()
+            
+            do {
+                let workouts = try context.fetch(workoutRequest)
+                NSLog("***** Successfully fetched previous workouts: \(workouts.count)")
+                deferred.success(value: workouts)
+            } catch {
+                NSLog("***** ERROR: fetchPreviousWorkouts() --> Failed to fetch previous workouts")
+                deferred.failure(
+                    error: GymLogError.databaseReadError(message: "Failed to fetch previous workouts"))
             }
         }
         return deferred
@@ -83,13 +106,49 @@ internal class CoreDataGymLogClient: CoreDataClient {
         return deferred
     }
     
+    func fetchWorkoutDetails(with id: UUID) -> FutureResult<Workout> {
+        let deferred = DeferredResult<Workout>()
+        let context = AppDelegate.viewContext
+        context.perform {
+            let workoutRequest: NSFetchRequest<Workout> = Workout.fetchRequest()
+            
+            print("+++++ UUID in client: \(id)")
+//            let predicate = NSPredicate(format: "%K == %@", id as CVarArg)
+            workoutRequest.predicate = NSPredicate(
+            format: "id = %@",
+            argumentArray: [id])
+//            workoutRequest.predicate = predicate
+            
+            do {
+                let workoutArray = try context.fetch(workoutRequest)
+                NSLog("***** Successfully fetched workout")
+                
+                // TODO: may not need the assert AND the guard
+                assert(workoutArray.count == 1, "ERROR: Expected 1 workout when fetching workout details")
+                
+                guard let workout = workoutArray.first else {
+                    NSLog("***** ERROR: fetching workout details contained no results. Expected 1 result")
+                    abort()
+                }
+                
+                deferred.success(value: workout)
+            } catch {
+                NSLog("***** ERROR: fetchPreviousWorkouts() --> Failed to fetch workout details")
+                deferred.failure(
+                    error: GymLogError.databaseReadError(message: "Failed to fetch workout details"))
+            }
+        }
+        
+        return deferred
+    }
+    
     // Private functions
     
     /**
      *  Creates and returns an NSPredicate to query for a workout that is
      *  within today's date
      */
-    private func getDatePredicate() -> NSPredicate {
+    private func getTodaysDatePredicate() -> NSPredicate {
         // Source: https://inneka.com/programming/swift/core-data-predicate-filter-by-todays-date/
         // Get the current calendar with local time zone
         var calendar = Calendar.current
@@ -106,5 +165,13 @@ internal class CoreDataGymLogClient: CoreDataClient {
         let datePredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [fromPredicate, toPredicate])
         
         return datePredicate
+    }
+    
+    private func getPreviousWorkoutsPredicate() -> NSPredicate {
+        var calendar = Calendar.current
+        calendar.timeZone = NSTimeZone.local
+        let startOfToday = calendar.startOfDay(for: Date())
+        let previousDayPredicate = NSPredicate(format: "date < %@", startOfToday as NSDate)
+        return previousDayPredicate
     }
 }

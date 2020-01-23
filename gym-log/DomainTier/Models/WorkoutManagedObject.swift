@@ -21,11 +21,13 @@ public class Workout: NSManagedObject {
             workout.addToExercises(NSSet(array: exercises))
             workout.completed = false
             
-            do {
-                try context.save()
-                print("WORKOUT SAVED")
-            } catch  {
-                print("ERROR SAVING WORKOUT")
+            context.perform {
+                do {
+                    try context.save()
+                    print("***** Workout Saved")
+                } catch  {
+                    print("***** Error saving workout")
+                }
             }
         }
     }

@@ -22,16 +22,16 @@ public class AddWorkoutViewController: UIViewController {
         let managedContext = AppDelegate.viewContext
         let exercises = [
             Exercise.createExercise(context: managedContext, type: .warmUp, name: "5 min Elliptical"),
-            Exercise.createExercise(context: managedContext, type: .single, name: "Standing barbell shoulder press", numberOfSets: 5, numberOfReps: 5),
-            Exercise.createExercise(context: managedContext, type: .single, name: "Plate raises", numberOfSets: 3, numberOfReps: 8),
-            Exercise.createExercise(context: managedContext, type: .single, name: "Reverse flies", numberOfSets: 5, numberOfReps: 5),
-            Exercise.createExercise(context: managedContext, type: .superSet, name: nil, numberOfSets: 4, numberOfReps: 10, exerciseDescriptions: ["Some super set", "Seated dumbell shoulder press", "Dumbell lat raises"]),
-            Exercise.createExercise(context: managedContext, type: .postLift, name: "25 min swim")
+            Exercise.createExercise(context: managedContext, type: .single, name: "Close Grip Bench Press", numberOfSets: 5, numberOfReps: 5),
+            Exercise.createExercise(context: managedContext, type: .superSet, name: nil, numberOfSets: 4, numberOfReps: 10, exerciseDescriptions: ["Standing EZ Bar Curls", "Skull Crushers"]),
+            Exercise.createExercise(context: managedContext, type: .superSet, name: nil, numberOfSets: 4, numberOfReps: 8, exerciseDescriptions: ["Straight Bar Cable Curls", "Straight Bar Tricep Pushdowns"]),
+            Exercise.createExercise(context: managedContext, type: .superSet, name: nil, numberOfSets: 4, numberOfReps: 12, exerciseDescriptions: ["Standing Single Arm Dumbbell Curls", "Overhead Tricep Extensions"]),
+            Exercise.createExercise(context: managedContext, type: .postLift, name: "20-25 min swim")
         ]
         
         let _ = Workout.createWorkout(
             context: managedContext,
-            workoutTitle: "Monday 1/20 - Chest",
+            workoutTitle: "Wednesday 1/22 - Arms",
             exercises: exercises
         )
         

@@ -28,11 +28,15 @@ public struct WorkoutSM: WorkoutScreenModel {
         return self.workout.title ?? ""
     }
     
+    public var lookupKey: UUID? {
+        return self.workout.id
+    }
+    
     public var date: String {
         guard let _date = self.workout.date else { return "" }
         
         let dateFormatterGet = DateFormatter()
-        dateFormatterGet.dateFormat = "MM/dd"
+        dateFormatterGet.dateFormat = "M/dd/YYY"
         return dateFormatterGet.string(from: _date)
     }
     
