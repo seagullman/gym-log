@@ -43,6 +43,34 @@ public class AddExerciseViewHelper {
         return stackView
     }
     
+    public class func viewForSuperSet(exercise: ExerciseSaveModel) -> UIView {
+        let descriptionLabel = self.getFormattedExerciseDescriptionLabel()
+        var descriptionText = ""
+        exercise.exerciseDescriptions?.forEach({ (description) in
+            let index = exercise.exerciseDescriptions?.firstIndex(of: description)
+            descriptionText.append(description)
+            
+            if (index! < (exercise.exerciseDescriptions!.count - 1)) {
+                descriptionText.append(contentsOf: ",")
+            }
+        })
+        descriptionLabel.text = descriptionText
+        
+        let typeText = "Super Set"
+        
+        let typeLabel = self.getFormattedExerciseTypeLabel()
+        typeLabel.text = typeText
+        
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        stackView.distribution = .equalSpacing
+        
+        stackView.addArrangedSubview(descriptionLabel)
+        stackView.addArrangedSubview(typeLabel)
+        
+        return stackView
+    }
+    
     private class func getFormattedExerciseTypeLabel() -> UILabel {
         let label = UILabel()
         let font = UIFont.systemFont(ofSize: 15, weight: .thin)

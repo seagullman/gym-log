@@ -94,7 +94,7 @@ public class WorkoutDashboardTableViewController: SPRTableViewController,
         if let header = view as? UITableViewHeaderFooterView {
             header.textLabel?.font = UIFont.boldSystemFont(ofSize: 18.0)
 //            TODO: set the header color
-            header.contentView.backgroundColor = .white
+            header.contentView.backgroundColor = .secondarySystemBackground
             
         }
     }

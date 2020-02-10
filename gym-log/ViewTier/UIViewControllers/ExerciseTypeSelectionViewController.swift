@@ -38,6 +38,12 @@ public class ExerciseTypeSelectionViewController: UIViewController {
             else { return }
 
             destination.addExerciseDelegate = self.addExerciseDelegate
+        case "AddSuperSet":
+            guard
+                let destination = segue.destination as? SuperSetAddMasterViewController
+            else { return }
+            
+            destination.addExerciseDelegate = self.addExerciseDelegate
         default:
             NSLog("Unexpected segue identifer: \(identifier)")
             abort()

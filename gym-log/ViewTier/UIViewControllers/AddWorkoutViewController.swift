@@ -100,8 +100,13 @@ public class AddWorkoutViewController: UIViewController, AddExerciseDelegate {
     // MARK: AddExerciseDelegate
     
     public func exerciseAdded(exercise: ExerciseSaveModel) {
-        let view = AddExerciseViewHelper.viewFor(exercise: exercise)
-        self.exerciseStackView.addArrangedSubview(view)
+        if (exercise.type == .superSet) {
+            let view = AddExerciseViewHelper.viewForSuperSet(exercise: exercise)
+            self.exerciseStackView.addArrangedSubview(view)
+        } else {
+            let view = AddExerciseViewHelper.viewFor(exercise: exercise)
+            self.exerciseStackView.addArrangedSubview(view)
+        }
     }
     
     @IBAction func unwindToAddWorkout(segue:UIStoryboardSegue) { }

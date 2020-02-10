@@ -78,6 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4467A04A23F1F734005C1758 /* M13Checkbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = M13Checkbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0016B271FB3912B00761784 /* WaitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitTests.swift; sourceTree = "<group>"; };
 		F0016B4D1FB4EAF900761784 /* SPRingboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPRingboard.swift; sourceTree = "<group>"; };
 		F01C49801F7ADA5A00B88823 /* SPRingboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SPRingboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +161,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4467A04923F1F734005C1758 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4467A04A23F1F734005C1758 /* M13Checkbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F0016B261FB390EC00761784 /* FutureResultTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,6 +460,7 @@
 				F01C49FC1F7ADE9400B88823 /* iOS */,
 				F01C49811F7ADA5A00B88823 /* Products */,
 				F01C49981F7ADA6500B88823 /* Targets */,
+				4467A04923F1F734005C1758 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -746,6 +756,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Targets/iOS/SPRingboard/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -814,6 +825,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Targets/iOS/SPRingboard/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.spr.SPRingboard;
