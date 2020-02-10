@@ -8,6 +8,14 @@
 
 import CoreData
 
+public struct ExerciseSaveModel {
+    let type: ExerciseType
+    let name: String?
+    let numberOfSets: Int16?
+    let numberOfReps: Int16?
+    let exerciseDescriptions: [String]?
+}
+
 public enum ExerciseType: Int16 {
     case warmUp = 0
     case single = 1
@@ -16,6 +24,12 @@ public enum ExerciseType: Int16 {
 }
 
 public class Exercise: NSManagedObject {
+    
+    class func getExerciseShell() -> Exercise {
+        let context = AppDelegate.viewContext
+        let exercise = Exercise(context: context)
+        return exercise
+    }
     
     class func createExercise(
         context: NSManagedObjectContext,

@@ -9,6 +9,7 @@
 import UIKit
 import SPRingboard
 
+
 public class PreviousWorkoutsTableViewController: SPRTableViewController {
 
     public override func loadObjectDataSource() -> FutureResult<ObjectDataSource<Any>> {

@@ -13,10 +13,32 @@ public protocol AddWorkoutDelegate: class {
     func workoutSaved()
 }
 
+public protocol AddExerciseDelegate: class {
+    func exerciseAdded(exercise: ExerciseSaveModel)
+}
 
-public class AddWorkoutViewController: UIViewController {
+public class AddWorkoutViewController: UIViewController, AddExerciseDelegate {
     
     public var delegate: AddWorkoutDelegate?
+    
+    @IBOutlet weak var exerciseStackView: UIStackView!
+    
+    @IBAction func navigateToAddExerciseScreen() {
+        print("***** Navigating to add exercise screen")
+    }
+    
+    
+//    public override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//
+//        var i = 0
+//        while (i < 200) {
+//            let label = UILabel()
+//            label.text = "Label \(i)"
+//            self.stackView.addArrangedSubview(label)
+//            i += 1
+//        }
+//    }
     
     @IBAction func saveWorkout() {
         let managedContext = AppDelegate.viewContext
@@ -39,6 +61,26 @@ public class AddWorkoutViewController: UIViewController {
         self.presentingViewController?.dismiss(animated: true)
     }
     
+    public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else {
+            NSLog("Segue to \(type(of:segue.destination)) missing identifier")
+            abort()
+        }
+        
+        switch identifier {
+        case "SelectExerciseType":
+            guard
+                let destination = segue.destination as? ExerciseTypeSelectionViewController
+            else { return }
+            
+            print("setting delegate")
+            destination.addExerciseDelegate = self
+        default:
+            NSLog("Unexpected segue identifer: \(identifier)")
+            abort()
+        }
+    }
+    
     private func deleteDatabase(_ managedContext: NSManagedObjectContext) {
         // Create Fetch Request
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Workout")
@@ -54,5 +96,21 @@ public class AddWorkoutViewController: UIViewController {
             // Error Handling
         }
     }
+    
+    // MARK: AddExerciseDelegate
+    
+    public func exerciseAdded(exercise: ExerciseSaveModel) {
+        
+        switch exercise.type {
+        case .warmUp:
+            let view = AddExerciseViewHelper.viewForWarmUp(exercise: exercise)
+            self.exerciseStackView.addArrangedSubview(view)
+        default:
+            return
+        }
+    
+    }
+    
+    @IBAction func unwindToAddWorkout(segue:UIStoryboardSegue) { }
 
 }
