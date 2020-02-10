@@ -20,6 +20,7 @@ public protocol AddExerciseDelegate: class {
 public class AddWorkoutViewController: UIViewController, AddExerciseDelegate {
     
     public var delegate: AddWorkoutDelegate?
+    public var shouldUseTodaysDate: Bool = false
     
     @IBOutlet weak var exerciseStackView: UIStackView!
     
@@ -73,7 +74,6 @@ public class AddWorkoutViewController: UIViewController, AddExerciseDelegate {
                 let destination = segue.destination as? ExerciseTypeSelectionViewController
             else { return }
             
-            print("setting delegate")
             destination.addExerciseDelegate = self
         default:
             NSLog("Unexpected segue identifer: \(identifier)")
@@ -100,15 +100,8 @@ public class AddWorkoutViewController: UIViewController, AddExerciseDelegate {
     // MARK: AddExerciseDelegate
     
     public func exerciseAdded(exercise: ExerciseSaveModel) {
-        
-        switch exercise.type {
-        case .warmUp:
-            let view = AddExerciseViewHelper.viewForWarmUp(exercise: exercise)
-            self.exerciseStackView.addArrangedSubview(view)
-        default:
-            return
-        }
-    
+        let view = AddExerciseViewHelper.viewFor(exercise: exercise)
+        self.exerciseStackView.addArrangedSubview(view)
     }
     
     @IBAction func unwindToAddWorkout(segue:UIStoryboardSegue) { }

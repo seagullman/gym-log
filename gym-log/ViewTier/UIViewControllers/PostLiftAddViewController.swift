@@ -1,5 +1,5 @@
 //
-//  AddWarmUpViewController.swift
+//  PostLiftAddViewController.swift
 //  gym-log
 //
 //  Created by Brad Siegel on 2/10/20.
@@ -9,16 +9,17 @@
 import UIKit
 
 
-public class AddWarmUpViewController: UIViewController {
+public class PostLiftAddViewController: UIViewController {
     
     public var addExerciseDelegate: AddExerciseDelegate?
 
-    @IBOutlet weak var addWarmUpTextField: UITextField!
-
-    @IBAction func saveWarmUp() {
-        let warmUpDescription = self.addWarmUpTextField.text
+    @IBOutlet weak var descriptionTextField: UITextField!
+    
+    
+    @IBAction func savePostLiftExercise(_ sender: Any) {
+        let warmUpDescription = self.descriptionTextField.text
         let exerciseSaveModel = ExerciseSaveModel(
-            type: .warmUp,
+            type: .postLift,
             name: warmUpDescription,
             numberOfSets: nil,
             numberOfReps: nil,
@@ -28,4 +29,5 @@ public class AddWarmUpViewController: UIViewController {
         self.addExerciseDelegate?.exerciseAdded(exercise: exerciseSaveModel)
         performSegue(withIdentifier: "unwindSegueToAddWorkout", sender: self)
     }
+    
 }

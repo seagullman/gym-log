@@ -26,6 +26,18 @@ public class ExerciseTypeSelectionViewController: UIViewController {
             else { return }
             
             destination.addExerciseDelegate = self.addExerciseDelegate
+        case "AddSingle":
+            guard
+                let destination = segue.destination as? SingleExerciseAddViewController
+            else { return }
+
+            destination.addExerciseDelegate = self.addExerciseDelegate
+        case "AddPostLift":
+            guard
+                let destination = segue.destination as? PostLiftAddViewController
+            else { return }
+
+            destination.addExerciseDelegate = self.addExerciseDelegate
         default:
             NSLog("Unexpected segue identifer: \(identifier)")
             abort()

@@ -314,7 +314,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yjb-4H-4sV"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zUx-dD-nn0"/>
+                    <navigationItem key="navigationItem" id="zUx-dD-nn0">
+                        <barButtonItem key="rightBarButtonItem" title="Save Workout" id="XJ4-2h-i7e"/>
+                    </navigationItem>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="exerciseStackView" destination="6cs-om-UO2" id="Wy5-Nb-bgP"/>
@@ -360,6 +362,9 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Single"/>
+                                        <connections>
+                                            <segue destination="9Zj-QJ-2eK" kind="show" identifier="AddSingle" id="Hbm-51-4Tf"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6VY-oz-Sky">
                                         <rect key="frame" x="0.0" y="124.5" width="414" height="0.5"/>
@@ -391,6 +396,9 @@
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Post-Lift"/>
+                                        <connections>
+                                            <segue destination="c3c-bA-UnH" kind="show" identifier="AddPostLift" id="1i5-NI-d3V"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bdh-gB-4Zg">
                                         <rect key="frame" x="0.0" y="257.5" width="414" height="0.5"/>
@@ -417,7 +425,7 @@
             </objects>
             <point key="canvasLocation" x="3952" y="-352"/>
         </scene>
-        <!--Add Warm Up View Controller-->
+        <!--Add Warm Up Exercise-->
         <scene sceneID="xrt-ki-hlp">
             <objects>
                 <viewController id="fuZ-Vo-hpO" customClass="AddWarmUpViewController" customModule="gym_log" customModuleProvider="target" sceneMemberID="viewController">
@@ -426,7 +434,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cut-AG-qm0">
-                                <rect key="frame" x="15" y="118" width="384" height="130.5"/>
+                                <rect key="frame" x="15" y="118" width="384" height="75.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warm-Up Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMU-WB-u7W">
                                         <rect key="frame" x="0.0" y="0.0" width="384" height="20.5"/>
@@ -439,20 +447,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="j3z-xd-hsp"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtO-72-u9W">
-                                        <rect key="frame" x="0.0" y="80.5" width="384" height="50"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="wRE-V4-vfv"/>
-                                        </constraints>
-                                        <state key="normal" title="Save"/>
-                                        <connections>
-                                            <action selector="saveWarmUp" destination="fuZ-Vo-hpO" eventType="touchUpInside" id="gFo-0R-7rp"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -464,7 +461,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CSC-Tz-xeT"/>
                     </view>
-                    <navigationItem key="navigationItem" id="q1j-3i-qPu"/>
+                    <navigationItem key="navigationItem" title="Add Warm Up Exercise" id="q1j-3i-qPu">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="9VB-Qp-xBA">
+                            <connections>
+                                <action selector="saveWarmUp" destination="fuZ-Vo-hpO" id="u3v-09-LWH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="addWarmUpTextField" destination="7dL-Vs-mnP" id="t29-B5-DQA"/>
                         <segue destination="oXd-zN-Wkg" kind="unwind" identifier="unwindSegueToAddWorkout" unwindAction="unwindToAddWorkoutWithSegue:" id="iv9-Sp-u8b"/>
@@ -473,7 +476,124 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aao-bO-lhw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="oXd-zN-Wkg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4934.7826086956529" y="-350.22321428571428"/>
+            <point key="canvasLocation" x="4972" y="-1222"/>
+        </scene>
+        <!--Add Single Exercise-->
+        <scene sceneID="dez-RS-ssg">
+            <objects>
+                <viewController id="9Zj-QJ-2eK" customClass="SingleExerciseAddViewController" customModule="gym_log" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rm6-2c-TYr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ys-tq-HLC">
+                                <rect key="frame" x="15" y="118" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iLF-gW-KMz">
+                                <rect key="frame" x="15" y="144" width="384" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="tfL-lj-nFm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5W-oe-CqB">
+                                <rect key="frame" x="67" y="194" width="280" height="188"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="17A-c1-Wxp">
+                                        <rect key="frame" x="20" y="46.5" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="PNB-uE-iBH"/>
+                                            <constraint firstAttribute="height" constant="75" id="qwB-H9-UiH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pj2-hb-aw9">
+                                        <rect key="frame" x="25" y="20" width="34" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GS2-86-fUx">
+                                        <rect key="frame" x="100" y="63.5" width="80" height="40"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44.5" id="0RS-Q7-vEb"/>
+                                            <constraint firstAttribute="width" constant="80" id="4Xz-6T-PIZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0il-Bq-Nvu">
+                                        <rect key="frame" x="185" y="46.5" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="Xud-7m-dx1"/>
+                                            <constraint firstAttribute="height" constant="75" id="bvJ-AL-lbb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfC-cz-uXC">
+                                        <rect key="frame" x="185" y="20" width="38.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="GS2-86-fUx" firstAttribute="centerY" secondItem="17A-c1-Wxp" secondAttribute="centerY" id="0mE-Xb-qVz"/>
+                                    <constraint firstItem="Pj2-hb-aw9" firstAttribute="leading" secondItem="f5W-oe-CqB" secondAttribute="leading" constant="25" id="2Gq-an-XmE"/>
+                                    <constraint firstAttribute="trailing" secondItem="xfC-cz-uXC" secondAttribute="trailing" constant="56.5" id="EhE-E2-Pui"/>
+                                    <constraint firstItem="GS2-86-fUx" firstAttribute="centerY" secondItem="0il-Bq-Nvu" secondAttribute="centerY" id="IM7-GS-Qed"/>
+                                    <constraint firstItem="17A-c1-Wxp" firstAttribute="leading" secondItem="f5W-oe-CqB" secondAttribute="leading" constant="20" id="S0V-xX-6mH"/>
+                                    <constraint firstItem="GS2-86-fUx" firstAttribute="leading" secondItem="17A-c1-Wxp" secondAttribute="trailing" constant="5" id="Vm4-Na-HgR"/>
+                                    <constraint firstItem="0il-Bq-Nvu" firstAttribute="top" secondItem="xfC-cz-uXC" secondAttribute="bottom" constant="5" id="YzE-gx-Yq1"/>
+                                    <constraint firstItem="17A-c1-Wxp" firstAttribute="top" secondItem="Pj2-hb-aw9" secondAttribute="bottom" constant="5" id="ZWd-hO-M86"/>
+                                    <constraint firstItem="0il-Bq-Nvu" firstAttribute="leading" secondItem="GS2-86-fUx" secondAttribute="trailing" constant="5" id="c9R-6j-bI7"/>
+                                    <constraint firstItem="Pj2-hb-aw9" firstAttribute="top" secondItem="f5W-oe-CqB" secondAttribute="top" constant="20" id="cod-br-hEB"/>
+                                    <constraint firstItem="xfC-cz-uXC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Pj2-hb-aw9" secondAttribute="trailing" symbolic="YES" id="gEH-Km-gPu"/>
+                                    <constraint firstAttribute="trailing" secondItem="0il-Bq-Nvu" secondAttribute="trailing" constant="20" id="gZo-a9-F7y"/>
+                                    <constraint firstItem="GS2-86-fUx" firstAttribute="top" secondItem="f5W-oe-CqB" secondAttribute="top" constant="61.5" id="kFQ-ex-QhN"/>
+                                    <constraint firstItem="xfC-cz-uXC" firstAttribute="top" secondItem="f5W-oe-CqB" secondAttribute="top" constant="20" id="ptB-7M-Gzj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="psK-gG-o8v" firstAttribute="trailing" secondItem="iLF-gW-KMz" secondAttribute="trailing" constant="15" id="DzO-bY-jFh"/>
+                            <constraint firstItem="f5W-oe-CqB" firstAttribute="top" secondItem="iLF-gW-KMz" secondAttribute="bottom" id="FJ1-as-oaZ"/>
+                            <constraint firstItem="0ys-tq-HLC" firstAttribute="top" secondItem="psK-gG-o8v" secondAttribute="top" constant="30" id="IXU-dH-QdO"/>
+                            <constraint firstItem="psK-gG-o8v" firstAttribute="bottom" secondItem="f5W-oe-CqB" secondAttribute="bottom" constant="431" id="YZ9-hy-R6h"/>
+                            <constraint firstItem="iLF-gW-KMz" firstAttribute="leading" secondItem="psK-gG-o8v" secondAttribute="leading" constant="15" id="f6G-T6-i6j"/>
+                            <constraint firstItem="0ys-tq-HLC" firstAttribute="leading" secondItem="psK-gG-o8v" secondAttribute="leading" constant="15" id="g3C-J2-q4Q"/>
+                            <constraint firstItem="f5W-oe-CqB" firstAttribute="centerX" secondItem="rm6-2c-TYr" secondAttribute="centerX" id="lNW-7v-rds"/>
+                            <constraint firstItem="f5W-oe-CqB" firstAttribute="centerX" secondItem="iLF-gW-KMz" secondAttribute="centerX" id="pQR-QK-AuG"/>
+                            <constraint firstItem="psK-gG-o8v" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0ys-tq-HLC" secondAttribute="trailing" symbolic="YES" id="rq1-6K-tuw"/>
+                            <constraint firstItem="iLF-gW-KMz" firstAttribute="top" secondItem="0ys-tq-HLC" secondAttribute="bottom" constant="5" id="ykK-F2-324"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="psK-gG-o8v"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Single Exercise" id="m23-0C-xso">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="Su6-JK-WTv">
+                            <connections>
+                                <action selector="saveExercise:" destination="9Zj-QJ-2eK" id="rTZ-9u-B04"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="iLF-gW-KMz" id="kxT-lK-mr7"/>
+                        <outlet property="repsTextField" destination="0il-Bq-Nvu" id="X3L-2s-4tD"/>
+                        <outlet property="setsTextField" destination="17A-c1-Wxp" id="35K-b4-bxy"/>
+                        <segue destination="VFI-Lm-Gqw" kind="unwind" identifier="unwindSegueToAddWorkout" unwindAction="unwindToAddWorkoutWithSegue:" id="CIi-tV-DwW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDm-HF-EBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="VFI-Lm-Gqw" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="5665" y="-860"/>
         </scene>
         <!--Upcoming Workouts-->
         <scene sceneID="lou-t0-tx7">
@@ -683,11 +803,65 @@
             </objects>
             <point key="canvasLocation" x="1128.985507246377" y="1230.8035714285713"/>
         </scene>
+        <!--Add Post-Lift Exercise-->
+        <scene sceneID="caH-hf-yhR">
+            <objects>
+                <viewController id="c3c-bA-UnH" customClass="PostLiftAddViewController" customModule="gym_log" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k5r-5a-9cq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AgI-rS-UhU">
+                                <rect key="frame" x="15" y="118" width="384" height="75.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post-Lift Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teN-tk-rwT">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWq-Ty-lft">
+                                        <rect key="frame" x="0.0" y="25.5" width="384" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ldg-pJ-avD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AgI-rS-UhU" firstAttribute="leading" secondItem="1Cm-lL-4xh" secondAttribute="leading" constant="15" id="ABD-kp-Pxp"/>
+                            <constraint firstItem="AgI-rS-UhU" firstAttribute="top" secondItem="1Cm-lL-4xh" secondAttribute="top" constant="30" id="bdU-1l-AF7"/>
+                            <constraint firstItem="1Cm-lL-4xh" firstAttribute="trailing" secondItem="AgI-rS-UhU" secondAttribute="trailing" constant="15" id="gTg-hJ-9Ex"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Cm-lL-4xh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Post-Lift Exercise" id="O7S-LJ-5yb">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="nCF-gO-knd">
+                            <connections>
+                                <action selector="savePostLiftExercise:" destination="c3c-bA-UnH" id="5g9-bU-uu3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="uWq-Ty-lft" id="GA7-na-tOe"/>
+                        <segue destination="eGe-Er-tE4" kind="unwind" identifier="unwindSegueToAddWorkout" unwindAction="unwindToAddWorkoutWithSegue:" id="ocn-Ph-O9R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ID-gk-MyH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="eGe-Er-tE4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="5533" y="-147"/>
+        </scene>
     </scenes>
     <resources>
         <image name="archivebox" catalog="system" width="64" height="52"/>
         <image name="calendar" catalog="system" width="64" height="52"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="xmark" catalog="system" width="64" height="56"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

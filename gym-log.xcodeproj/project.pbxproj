@@ -30,6 +30,8 @@
 		4467A03423F1C251005C1758 /* AddExerciseIndividualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467A03323F1C251005C1758 /* AddExerciseIndividualView.swift */; };
 		4467A03623F1C291005C1758 /* AddExerciseIndividualView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4467A03523F1C291005C1758 /* AddExerciseIndividualView.xib */; };
 		4467A03923F1C9F1005C1758 /* AddExerciseViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467A03823F1C9F1005C1758 /* AddExerciseViewHelper.swift */; };
+		4467A03B23F1D009005C1758 /* SingleExerciseAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467A03A23F1D009005C1758 /* SingleExerciseAddViewController.swift */; };
+		4467A03D23F1E0F9005C1758 /* PostLiftAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467A03C23F1E0F9005C1758 /* PostLiftAddViewController.swift */; };
 		44856CCB23D0DCAB00009A5D /* ReadTodaysWorkoutsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44856CCA23D0DCAB00009A5D /* ReadTodaysWorkoutsCommand.swift */; };
 		44856CCE23D0E54400009A5D /* CreateObjectDataSourceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44856CCD23D0E54400009A5D /* CreateObjectDataSourceHelper.swift */; };
 		4489522323D8C20C00C0EBBE /* SimpleExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489522223D8C20C00C0EBBE /* SimpleExerciseTableViewCell.swift */; };
@@ -116,6 +118,8 @@
 		4467A03323F1C251005C1758 /* AddExerciseIndividualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseIndividualView.swift; sourceTree = "<group>"; };
 		4467A03523F1C291005C1758 /* AddExerciseIndividualView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddExerciseIndividualView.xib; sourceTree = "<group>"; };
 		4467A03823F1C9F1005C1758 /* AddExerciseViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseViewHelper.swift; sourceTree = "<group>"; };
+		4467A03A23F1D009005C1758 /* SingleExerciseAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleExerciseAddViewController.swift; sourceTree = "<group>"; };
+		4467A03C23F1E0F9005C1758 /* PostLiftAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostLiftAddViewController.swift; sourceTree = "<group>"; };
 		44856CCA23D0DCAB00009A5D /* ReadTodaysWorkoutsCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTodaysWorkoutsCommand.swift; sourceTree = "<group>"; };
 		44856CCD23D0E54400009A5D /* CreateObjectDataSourceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateObjectDataSourceHelper.swift; sourceTree = "<group>"; };
 		4489522223D8C20C00C0EBBE /* SimpleExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleExerciseTableViewCell.swift; sourceTree = "<group>"; };
@@ -303,6 +307,8 @@
 				44BA8C4523DF40E1005C1314 /* AddWorkoutHeaderViewController.swift */,
 				4467A02F23F1A625005C1758 /* AddWarmUpViewController.swift */,
 				4467A03123F1A9FF005C1758 /* ExerciseTypeSelectionViewController.swift */,
+				4467A03A23F1D009005C1758 /* SingleExerciseAddViewController.swift */,
+				4467A03C23F1E0F9005C1758 /* PostLiftAddViewController.swift */,
 			);
 			path = UIViewControllers;
 			sourceTree = "<group>";
@@ -683,10 +689,12 @@
 				44C3254E23C3A7A70086B96C /* SceneDelegate.swift in Sources */,
 				448A136023D6414C006DA85B /* UpdateExerciseCommand.swift in Sources */,
 				4493CFDA23CAEF1C00D9D578 /* Model.xcdatamodeld in Sources */,
+				4467A03D23F1E0F9005C1758 /* PostLiftAddViewController.swift in Sources */,
 				441C7FBC23CFA72A00736DFB /* WorkoutManagedObject.swift in Sources */,
 				44E6389A23DA0023005BB248 /* WorkoutDetailsTableViewCell.swift in Sources */,
 				4467A03023F1A625005C1758 /* AddWarmUpViewController.swift in Sources */,
 				44E6389C23DA0F17005BB248 /* WorkoutDetailsDataSource.swift in Sources */,
+				4467A03B23F1D009005C1758 /* SingleExerciseAddViewController.swift in Sources */,
 				4489522323D8C20C00C0EBBE /* SimpleExerciseTableViewCell.swift in Sources */,
 				44E6389623D9FB99005BB248 /* ReadWorkoutDetailsCommand.swift in Sources */,
 				442E257323C4FA4300525DE9 /* ReadAllWorkoutsCommand.swift in Sources */,

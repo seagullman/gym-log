@@ -14,12 +14,24 @@ public class AddExerciseViewHelper {
     
     // TODO: format labels
     
-    public class func viewForWarmUp(exercise: ExerciseSaveModel) -> UIView {
+    public class func viewFor(exercise: ExerciseSaveModel) -> UIView {
         let descriptionLabel = self.getFormattedExerciseDescriptionLabel()
         descriptionLabel.text = exercise.name
         
+        let typeText: String
+        switch exercise.type {
+        case .warmUp:
+            typeText = "Warm Up"
+        case .single:
+            typeText = "Single"
+        case .superSet:
+            typeText = "Super Set"
+        case .postLift:
+            typeText = "Post-lift"
+        }
+        
         let typeLabel = self.getFormattedExerciseTypeLabel()
-        typeLabel.text = "Warm Up"
+        typeLabel.text = typeText
         
         let stackView = UIStackView()
         stackView.axis = .horizontal
