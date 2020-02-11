@@ -310,17 +310,17 @@
 		444F54FF23C7AE74005E07C2 /* UIViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				44C3254F23C3A7A70086B96C /* WorkoutDashboardTableViewController.swift */,
-				441C7FB923CF770800736DFB /* AddWorkoutViewController.swift */,
-				4489522423D8C28D00C0EBBE /* PreviousWorkoutsTableViewController.swift */,
-				44E6389723D9FE56005BB248 /* WorkoutDetailsTableViewController.swift */,
-				44BA8C4523DF40E1005C1314 /* AddWorkoutHeaderViewController.swift */,
 				4467A02F23F1A625005C1758 /* AddWarmUpViewController.swift */,
+				44BA8C4523DF40E1005C1314 /* AddWorkoutHeaderViewController.swift */,
+				441C7FB923CF770800736DFB /* AddWorkoutViewController.swift */,
 				4467A03123F1A9FF005C1758 /* ExerciseTypeSelectionViewController.swift */,
-				4467A03A23F1D009005C1758 /* SingleExerciseAddViewController.swift */,
 				4467A03C23F1E0F9005C1758 /* PostLiftAddViewController.swift */,
-				4467A04E23F1FCA4005C1758 /* SuperSetAddMasterViewController.swift */,
+				4489522423D8C28D00C0EBBE /* PreviousWorkoutsTableViewController.swift */,
+				4467A03A23F1D009005C1758 /* SingleExerciseAddViewController.swift */,
 				4467A05023F1FE1A005C1758 /* SuperSetAddDetailViewController.swift */,
+				4467A04E23F1FCA4005C1758 /* SuperSetAddMasterViewController.swift */,
+				44C3254F23C3A7A70086B96C /* WorkoutDashboardTableViewController.swift */,
+				44E6389723D9FE56005BB248 /* WorkoutDetailsTableViewController.swift */,
 			);
 			path = UIViewControllers;
 			sourceTree = "<group>";

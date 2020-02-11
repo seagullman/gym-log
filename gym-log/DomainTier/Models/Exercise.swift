@@ -37,14 +37,15 @@ public class Exercise: NSManagedObject {
         name: String? = nil,
         numberOfSets: Int16? = nil,
         numberOfReps: Int16? = nil,
-        exerciseDescriptions: [String]? = nil
+        exerciseDescriptions: [String]? = nil,
+        date: Date
     ) -> Exercise {
          
         let exercise = Exercise(context: context)
         exercise.id = UUID()
         exercise.type = type.rawValue
         exercise.name = name
-        exercise.date = Date()
+        exercise.date = date
         exercise.completed = false
         
         var set = NSSet()

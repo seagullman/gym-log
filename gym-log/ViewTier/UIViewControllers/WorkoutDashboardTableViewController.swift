@@ -93,9 +93,7 @@ public class WorkoutDashboardTableViewController: SPRTableViewController,
     override public func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let header = view as? UITableViewHeaderFooterView {
             header.textLabel?.font = UIFont.boldSystemFont(ofSize: 18.0)
-//            TODO: set the header color
             header.contentView.backgroundColor = .secondarySystemBackground
-            
         }
     }
     

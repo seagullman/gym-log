@@ -40,15 +40,15 @@ public class ExerciseView: UIView {
         self.delegate?.didToggleExercise(withValue: checked, exerciseSM: exercise)
         
         if (checked) {
-            self.nameLabel.textColor = UIColor.lightGray
-            self.descriptionLabel.textColor = UIColor.lightGray
+            self.nameLabel.textColor = UIColor.systemGray
+            self.descriptionLabel.textColor = UIColor.systemGray
             
-            self.exerciseDescriptionLabels.forEach { $0.textColor = UIColor.lightGray }
+            self.exerciseDescriptionLabels.forEach { $0.textColor = UIColor.systemGray }
         } else {
-            self.nameLabel.textColor = UIColor.black
-            self.descriptionLabel.textColor = UIColor.black
+            self.nameLabel.textColor = UIColor.label
+            self.descriptionLabel.textColor = UIColor.label
             
-            self.exerciseDescriptionLabels.forEach { $0.textColor = UIColor.black }
+            self.exerciseDescriptionLabels.forEach { $0.textColor = UIColor.label }
         }
     }
     
@@ -86,8 +86,8 @@ public class ExerciseView: UIView {
             stackView.axis = .vertical
             
             if (exerciseSM.completed) {
-                self.nameLabel.textColor = UIColor.lightGray
-                self.descriptionLabel.textColor = UIColor.lightGray
+                self.nameLabel.textColor = UIColor.systemGray
+                self.descriptionLabel.textColor = UIColor.systemGray
             }
 
             self.nameLabel.text = warmUpSM.typeString
@@ -108,8 +108,8 @@ public class ExerciseView: UIView {
             stackView.axis = .vertical
             
             if (exerciseSM.completed) {
-                self.nameLabel.textColor = UIColor.lightGray
-                self.descriptionLabel.textColor = UIColor.lightGray
+                self.nameLabel.textColor = UIColor.systemGray
+                self.descriptionLabel.textColor = UIColor.systemGray
             }
 
             self.nameLabel.text = "\(singleSM.numberOfSets)x\(singleSM.numberOfReps)" // TODO: move this text formatting to screenmodel
@@ -129,7 +129,7 @@ public class ExerciseView: UIView {
             stackView.axis = .vertical
             
             if (exerciseSM.completed) {
-                self.nameLabel.textColor = UIColor.lightGray
+                self.nameLabel.textColor = UIColor.systemGray
             }
             
             self.nameLabel.text = "Super Set \(superSetSM.numberOfSets)x\(superSetSM.numberOfReps)"
@@ -140,7 +140,7 @@ public class ExerciseView: UIView {
                 self.exerciseDescriptionLabels.append(descriptionLabel)
                 descriptionLabel.text = description
                 if (exerciseSM.completed) {
-                    descriptionLabel.textColor = UIColor.lightGray
+                    descriptionLabel.textColor = UIColor.systemGray
                 }
                 stackView.addArrangedSubview(descriptionLabel)
             }
@@ -156,8 +156,8 @@ public class ExerciseView: UIView {
             stackView.axis = .vertical
 
             if (exerciseSM.completed) {
-                self.nameLabel.textColor = UIColor.lightGray
-                self.descriptionLabel.textColor = UIColor.lightGray
+                self.nameLabel.textColor = UIColor.systemGray
+                self.descriptionLabel.textColor = UIColor.systemGray
             }
             
             self.nameLabel.text = postLiftSM.typeString

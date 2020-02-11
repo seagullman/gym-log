@@ -73,7 +73,7 @@
                                         <constraint firstAttribute="trailing" secondItem="D3T-z9-jOf" secondAttribute="trailing" constant="15" id="wHg-iJ-K6y"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="stackView" destination="r5g-hd-0Hf" id="FYc-kh-AGr"/>
                                 </connections>
@@ -237,19 +237,19 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="6cs-om-UO2">
-                                                <rect key="frame" x="0.0" y="250.5" width="414" height="66"/>
+                                                <rect key="frame" x="0.0" y="250.5" width="414" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlw-Jr-WkN">
-                                                        <rect key="frame" x="15" y="8" width="384" height="50"/>
+                                                        <rect key="frame" x="15" y="0.0" width="384" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <edgeInsets key="layoutMargins" top="8" left="15" bottom="8" right="15"/>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="15" bottom="0.0" right="15"/>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kl-Xg-b88">
-                                                <rect key="frame" x="0.0" y="316.5" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="300.5" width="414" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Exercise..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJW-5V-3xx">
                                                         <rect key="frame" x="15" y="14.5" width="117.5" height="21.5"/>
@@ -316,11 +316,16 @@
                         <viewLayoutGuide key="safeArea" id="yjb-4H-4sV"/>
                     </view>
                     <navigationItem key="navigationItem" id="zUx-dD-nn0">
-                        <barButtonItem key="rightBarButtonItem" title="Save Workout" id="XJ4-2h-i7e"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save Workout" id="XJ4-2h-i7e">
+                            <connections>
+                                <action selector="saveWorkout:" destination="4vG-NC-0M7" id="h7g-Zu-xS1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="exerciseStackView" destination="6cs-om-UO2" id="Wy5-Nb-bgP"/>
+                        <outlet property="workoutNameTextField" destination="lq0-Ll-sU5" id="MIu-tg-NiR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPd-1w-r29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

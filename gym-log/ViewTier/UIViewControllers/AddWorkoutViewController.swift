@@ -19,13 +19,16 @@ public protocol AddExerciseDelegate: class {
 
 public class AddWorkoutViewController: UIViewController, AddExerciseDelegate {
     
+    @IBOutlet private weak var exerciseStackView: UIStackView!
+    @IBOutlet private weak var workoutNameTextField: UITextField!
+    
+    private var exercises: [ExerciseSaveModel] = []
+    
     public var delegate: AddWorkoutDelegate?
     public var shouldUseTodaysDate: Bool = false
     
-    @IBOutlet weak var exerciseStackView: UIStackView!
-    
     @IBAction func navigateToAddExerciseScreen() {
-        print("***** Navigating to add exercise screen")
+        
     }
     
     
@@ -40,27 +43,50 @@ public class AddWorkoutViewController: UIViewController, AddExerciseDelegate {
 //            i += 1
 //        }
 //    }
-    
-    @IBAction func saveWorkout() {
+    @IBAction func saveWorkout(_ sender: Any) {
         let managedContext = AppDelegate.viewContext
-        let exercises = [
-            Exercise.createExercise(context: managedContext, type: .warmUp, name: "5 min Elliptical"),
-            Exercise.createExercise(context: managedContext, type: .single, name: "Close Grip Bench Press", numberOfSets: 5, numberOfReps: 5),
-            Exercise.createExercise(context: managedContext, type: .superSet, name: nil, numberOfSets: 4, numberOfReps: 10, exerciseDescriptions: ["Standing EZ Bar Curls", "Skull Crushers"]),
-            Exercise.createExercise(context: managedContext, type: .superSet, name: nil, numberOfSets: 4, numberOfReps: 8, exerciseDescriptions: ["Straight Bar Cable Curls", "Straight Bar Tricep Pushdowns"]),
-            Exercise.createExercise(context: managedContext, type: .superSet, name: nil, numberOfSets: 4, numberOfReps: 12, exerciseDescriptions: ["Standing Single Arm Dumbbell Curls", "Overhead Tricep Extensions"]),
-            Exercise.createExercise(context: managedContext, type: .postLift, name: "20-25 min swim")
-        ]
-        
-        let _ = Workout.createWorkout(
+        let exerciseManagedObjects: [Exercise] = self.exercises.map { (saveModel) in
+            let exerciseManagedObj = Exercise.createExercise(
+                context: managedContext,
+                type: saveModel.type,
+                name: saveModel.name,
+                numberOfSets: saveModel.numberOfSets,
+                numberOfReps: saveModel.numberOfReps,
+                exerciseDescriptions: saveModel.exerciseDescriptions,
+                date: Date()
+            )
+            return exerciseManagedObj
+        }
+        _ = Workout.createWorkout(
             context: managedContext,
-            workoutTitle: "Wednesday 1/22 - Arms",
-            exercises: exercises
+            workoutTitle: self.workoutNameTextField.text ?? "",
+            exercises: exerciseManagedObjects
         )
         
         self.delegate?.workoutSaved()
-        self.presentingViewController?.dismiss(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
+    
+//    @IBAction func saveWorkoutz() {
+//        let managedContext = AppDelegate.viewContext
+//        let exercises = [
+//            Exercise.createExercise(context: managedContext, type: .warmUp, name: "5 min Elliptical"),
+//            Exercise.createExercise(context: managedContext, type: .single, name: "Close Grip Bench Press", numberOfSets: 5, numberOfReps: 5),
+//            Exercise.createExercise(context: managedContext, type: .superSet, name: nil, numberOfSets: 4, numberOfReps: 10, exerciseDescriptions: ["Standing EZ Bar Curls", "Skull Crushers"]),
+//            Exercise.createExercise(context: managedContext, type: .superSet, name: nil, numberOfSets: 4, numberOfReps: 8, exerciseDescriptions: ["Straight Bar Cable Curls", "Straight Bar Tricep Pushdowns"]),
+//            Exercise.createExercise(context: managedContext, type: .superSet, name: nil, numberOfSets: 4, numberOfReps: 12, exerciseDescriptions: ["Standing Single Arm Dumbbell Curls", "Overhead Tricep Extensions"]),
+//            Exercise.createExercise(context: managedContext, type: .postLift, name: "20-25 min swim")
+//        ]
+//
+//        let _ = Workout.createWorkout(
+//            context: managedContext,
+//            workoutTitle: "Wednesday 1/22 - Arms",
+//            exercises: exercises
+//        )
+//
+//        self.delegate?.workoutSaved()
+//        self.presentingViewController?.dismiss(animated: true)
+//    }
     
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else {
@@ -107,6 +133,8 @@ public class AddWorkoutViewController: UIViewController, AddExerciseDelegate {
             let view = AddExerciseViewHelper.viewFor(exercise: exercise)
             self.exerciseStackView.addArrangedSubview(view)
         }
+        
+        self.exercises.append(exercise)
     }
     
     @IBAction func unwindToAddWorkout(segue:UIStoryboardSegue) { }
